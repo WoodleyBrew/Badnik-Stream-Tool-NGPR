@@ -1,7 +1,7 @@
 
 <p align="center">
 
-  <img src="https://github.com/ilikepizza107/Project-Plus-Stream-Tool/blob/master/Preview.png" alt="Preview">
+  <img src="https://github.com/Motobug/Smashing-Grounds-Stream-Tool/blob/master/Preview.png" alt="Preview">
   
 </p>
 
