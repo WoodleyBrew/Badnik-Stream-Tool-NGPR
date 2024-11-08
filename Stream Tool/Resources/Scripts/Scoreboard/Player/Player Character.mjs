@@ -44,6 +44,8 @@ export class PlayerCharacter {
 
             // position the character
             const pos = data.charPos;
+			pos[0] += 5; //horizontal
+			pos[1] += 7; //vertical
             this.#charEl.style.transform = `translate(${pos[0]}px, ${pos[1]}px) scale(${pos[2]})`;
 
             // this will make the thing wait till the image is fully loaded

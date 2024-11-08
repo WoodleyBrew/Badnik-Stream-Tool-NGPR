@@ -1,5 +1,111 @@
 [
   {
+    "name": "Eden",
+    "tag": "",
+    "pronouns": "any/all",
+    "state": "",
+    "socials": {
+      "twitter": "",
+      "twitch": "",
+      "yt": ""
+    },
+    "characters": [
+      {
+        "character": "Marth",
+        "skin": "Marth (7)"
+      }
+    ]
+  },
+  {
+    "name": "Flarp",
+    "tag": "",
+    "pronouns": "he/him",
+    "state": "",
+    "socials": {
+      "twitter": "",
+      "twitch": "",
+      "yt": ""
+    },
+    "characters": [
+      {
+        "character": "Luigi",
+        "skin": "Luigi (4)"
+      }
+    ]
+  },
+  {
+    "name": "KoE",
+    "tag": "",
+    "pronouns": "he/him",
+    "state": "",
+    "socials": {
+      "twitter": "",
+      "twitch": "",
+      "yt": ""
+    },
+    "characters": [
+      {
+        "character": "Ganondorf",
+        "skin": "Ganondorf (7)"
+      }
+    ]
+  },
+  {
+    "name": "Motobug",
+    "tag": "",
+    "pronouns": "they/any",
+    "state": "",
+    "socials": {
+      "twitter": "",
+      "twitch": "",
+      "yt": ""
+    },
+    "characters": [
+      {
+        "character": "Knuckles",
+        "skin": "Knuckles (19)"
+      },
+      {
+        "character": "Sonic",
+        "skin": "Sonic (13)"
+      }
+    ]
+  },
+  {
+    "name": "Puunk_",
+    "tag": "",
+    "pronouns": "any/all",
+    "state": "",
+    "socials": {
+      "twitter": "",
+      "twitch": "",
+      "yt": ""
+    },
+    "characters": [
+      {
+        "character": "Pikachu",
+        "skin": "Pikachu (17)"
+      }
+    ]
+  },
+  {
+    "name": "sfy bees",
+    "tag": "",
+    "pronouns": "he/him",
+    "state": "",
+    "socials": {
+      "twitter": "",
+      "twitch": "",
+      "yt": ""
+    },
+    "characters": [
+      {
+        "character": "Olimar",
+        "skin": "Olimar (17)"
+      }
+    ]
+  },
+  {
     "name": "Test",
     "tag": "One",
     "pronouns": "Pronouns",
@@ -17,6 +123,40 @@
       {
         "character": "Captain Falcon",
         "skin": "Captain Falcon (1)"
+      }
+    ]
+  },
+  {
+    "name": "Thalia",
+    "tag": "",
+    "pronouns": "they/them",
+    "state": "",
+    "socials": {
+      "twitter": "",
+      "twitch": "",
+      "yt": ""
+    },
+    "characters": [
+      {
+        "character": "Fox",
+        "skin": "Fox (1)"
+      }
+    ]
+  },
+  {
+    "name": "Woodley",
+    "tag": "",
+    "pronouns": "any/all",
+    "state": "",
+    "socials": {
+      "twitter": "",
+      "twitch": "",
+      "yt": ""
+    },
+    "characters": [
+      {
+        "character": "Meta Knight",
+        "skin": "Meta Knight (8)"
       }
     ]
   }

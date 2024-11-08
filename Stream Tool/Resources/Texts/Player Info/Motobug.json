@@ -1,0 +1,21 @@
+{
+  "name": "Motobug",
+  "tag": "",
+  "pronouns": "they/any",
+  "state": "",
+  "socials": {
+    "twitter": "",
+    "twitch": "",
+    "yt": ""
+  },
+  "characters": [
+    {
+      "character": "Knuckles",
+      "skin": "Knuckles (19)"
+    },
+    {
+      "character": "Sonic",
+      "skin": "Sonic (13)"
+    }
+  ]
+}

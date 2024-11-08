@@ -88,7 +88,7 @@ export class Caster {
             actualText = this.#pronouns;
         }
 
-        updateText(this.#socialTextEl, actualText || "-", socialSize);
+        updateText(this.#socialTextEl, actualText || " ", socialSize);
 		resizeText(this.#socialTextEl.parentElement);
 
     }

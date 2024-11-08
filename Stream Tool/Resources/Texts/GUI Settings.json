@@ -1,6 +1,6 @@
 {
-  "guiWidth": 841,
-  "guiHeight": 421,
+  "guiWidth": 923,
+  "guiHeight": 540,
   "allowIntro": false,
   "forceWL": false,
   "customRound": false,
@@ -8,7 +8,7 @@
   "scoreAutoUpdate": false,
   "simpleTexts": false,
   "alwaysOnTop": false,
-  "resizable": false,
+  "resizable": true,
   "zoom": 100,
   "remoteUpdatePort": 1111,
   "webSocketPort": 8080

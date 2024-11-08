@@ -7,7 +7,7 @@ export const inside = {
 };
 
 /** Paths used for all of the Stream Tool */
-const realPath = inside.electron ? __dirname : ""; // local file path if in executable
+export const realPath = inside.electron ? __dirname : ""; // local file path if in executable
 export const stPath = {
     char : "",
     charRandom : realPath + '/Characters/Random',

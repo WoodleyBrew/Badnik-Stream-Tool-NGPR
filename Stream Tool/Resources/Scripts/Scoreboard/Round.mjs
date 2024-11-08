@@ -6,7 +6,7 @@ import { fadeInTimeSc, fadeOutTimeSc } from "./ScGlobals.mjs";
 
 const roundEl = document.getElementById('roundBorder');
 const textEl = document.getElementById('roundText');
-const fontSize = 18;
+const fontSize = 24;
 
 class Round {
 
@@ -85,7 +85,7 @@ class Round {
 
     }
 
-    /** Shows the logo image */
+    /** Shows the round element */
     show() {
 
         fadeIn(roundEl, fadeInTimeSc, current.delay);

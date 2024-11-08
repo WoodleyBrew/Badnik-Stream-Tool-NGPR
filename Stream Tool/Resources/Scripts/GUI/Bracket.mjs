@@ -21,7 +21,7 @@ const blankPlayerData = {
     iconSrc: "",
     score: "-"
 }
-let bracketData = {
+export let bracketData = {
     "WinnersSemis": [blankPlayerData, blankPlayerData, blankPlayerData, blankPlayerData],
     "WinnersFinals": [blankPlayerData, blankPlayerData],
     "GrandFinals" : [blankPlayerData, blankPlayerData],

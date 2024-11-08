@@ -3,6 +3,9 @@ import { resizeText } from "../../Utils/Resize Text.mjs";
 import { updateText } from "../../Utils/Update Text.mjs";
 import { bestOf } from "../BestOf.mjs";
 import { gamemode } from "../Gamemode Change.mjs";
+import { fadeIn } from "../../Utils/Fade In.mjs";
+import { fadeOut } from "../../Utils/Fade Out.mjs";
+import { fadeInTimeSc, fadeOutTimeSc } from "../ScGlobals.mjs";
 
 let scoreSize = 36;
 
@@ -44,7 +47,7 @@ export class TeamScore {
         return this.#score;
     }
 
-    update(score) {
+    async update(score) {
 
         // if old does not match new
         if (this.#score != score) {
@@ -70,10 +73,25 @@ export class TeamScore {
 
             // change the score image with the new values
             this.updateImg(gamemode.getGm(), bestOf.getBo(), score);
-
-            // update the numerical score in case we are displaying that
+			
+			// below is code for using numerical scores
+			
+            // we will want to wait longer if loading up
+            let fadeInDelay = .1;
+			
+			if (!current.startup) {
+                // if not loading, fade out the text (and wait for it)
+                await fadeOut(this.#scoreNum, fadeOutTimeSc);
+            } else {
+                // if loading, add an extra delay to fade in for later
+                fadeInDelay = current.delay;
+            }
+			
+			//update score text in the background
             updateText(this.#scoreNum, score, scoreSize);
-            resizeText(this.#scoreNum);
+			
+			// fade in the score text
+            fadeIn(this.#scoreNum, fadeInTimeSc, fadeInDelay);
 
         }
 

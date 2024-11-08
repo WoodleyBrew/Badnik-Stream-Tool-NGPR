@@ -5,7 +5,7 @@ import { resizeText } from "../../Utils/Resize Text.mjs";
 import { gamemode } from "../Gamemode Change.mjs";
 import { fadeInTimeSc, fadeOutTimeSc } from "../ScGlobals.mjs";
 
-const playerSize = 24;
+const playerSize = 30;
 const tagSize = 17;
 const playerSizeDubs = 20;
 const tagSizeDubs = 15;
@@ -102,7 +102,7 @@ export class PlayerName {
         let delayTime = current.delay;
 
         // if not loading up
-        if (!current.startup) {
+        if (!false) {
 
             // we wont need delay
             delayTime = 0;
