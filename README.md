@@ -7,8 +7,7 @@
 
 <h1 align="center">Project+ Stream Tool</h1>
 
-So you want to do a Project+ stream, huh? Well, today is your lucky day, because Readek and I have done tons of work so you don’t have to! With this tool, you will be able to set up a Project+ tournament stream in no time.
-
+This is a Project+ stream tool based on [ilikepizza's](https://github.com/ilikepizza107/Project-Plus-Stream-Tool) with a focus on readability, 4:3, and attractive design. 
 ---
 
 ## Features
@@ -21,7 +20,6 @@ So you want to do a Project+ stream, huh? Well, today is your lucky day, because
 - A [Bracket View](https://raw.githubusercontent.com/ilikepizza107/Project-Plus-Stream-Tool/master/Git%20Images/BracketPreview.png) to showcase your tournament's top 8 positions!
 - A [Remote GUI](https://raw.githubusercontent.com/ilikepizza107/Project-Plus-Stream-Tool/master/Git%20Images/RemoteGUI.png) that can be accessed by any device within the local network, including mobile devices!
 - Now with [2v2 support](https://raw.githubusercontent.com/ilikepizza107/Project-Plus-Stream-Tool/master/Git%20Images/2v2.png)!
-- Made to be customized! Add Brawl Vault characters, custom overlays or even dive into the code if you're brave enough!
 
 ---
 
@@ -29,7 +27,7 @@ So you want to do a Project+ stream, huh? Well, today is your lucky day, because
 These are instructions for **OBS Studio**:
 - Get the [latest release](https://github.com/ilikepizza107/Project-Plus-Stream-Tool/releases).
 - Extract somewhere.
-- Drag and drop `16.9 Scoreboard.html` or `4.3 Scoreboard.html` into OBS, or add a new browser source in OBS pointing at the local file.
+- Drag and drop `4.3 Scoreboard.html` into OBS, or add a new browser source in OBS pointing at the local file.
   - If the source looks weird, manually set the source's properties to 1920 width and 1080 height, or set your OBS canvas resolution to 1080p, or make the source fit the screen (Ctrl+F).
 - In the source's properties, change *Use custom frame rate* -> `60` (if streaming at 60fps of course).
 - Manage it all with the `Project+ Stream Tool` executable (or project-st-gui.app if you are on Mac).
