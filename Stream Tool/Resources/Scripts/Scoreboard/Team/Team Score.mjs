@@ -7,7 +7,7 @@ import { fadeIn } from "../../Utils/Fade In.mjs";
 import { fadeOut } from "../../Utils/Fade Out.mjs";
 import { fadeInTimeSc, fadeOutTimeSc } from "../ScGlobals.mjs";
 
-let scoreSize = 36;
+const scoreSize = 85;
 
 export class TeamScore {
 
@@ -47,36 +47,15 @@ export class TeamScore {
         return this.#score;
     }
 
-    async update(score) {
+	    async update(score) {
 
         // if old does not match new
         if (this.#score != score) {
             
-            // lets remember this new score
+			// lets remember this new score
             this.#score = score;
-
-            // if not loading the view, fire a cute animation when the score changes
-            if (!current.startup) {
-                
-                // clear previous animation
-                this.#animDiv.style.animation = "";
-                this.#animGrad.style.animation = "";
-
-                // trigger css reflow
-                this.#animDiv.offsetWidth;
-
-                // and trigger that animation
-                this.#animDiv.style.animation = "scoreUpMove 1.8s cubic-bezier(0.0, 0.3, 0.1, 1.0) both";
-                this.#animGrad.style.animation = "scoreUpGrad 2s both";
-
-            }
-
-            // change the score image with the new values
-            this.updateImg(gamemode.getGm(), bestOf.getBo(), score);
 			
-			// below is code for using numerical scores
-			
-            // we will want to wait longer if loading up
+			// we will want to wait longer if loading up
             let fadeInDelay = .1;
 			
 			if (!current.startup) {
@@ -87,10 +66,10 @@ export class TeamScore {
                 fadeInDelay = current.delay;
             }
 			
-			//update score text in the background
+			//update text in the background
             updateText(this.#scoreNum, score, scoreSize);
 			
-			// fade in the score text
+			// fade in the round text
             fadeIn(this.#scoreNum, fadeInTimeSc, fadeInDelay);
 
         }
