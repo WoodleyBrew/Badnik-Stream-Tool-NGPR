@@ -76,6 +76,8 @@ export class PlayerCharacter {
             // position the character
             const pos = data.charPos;
             this.#charEl.style.transform = `translate(${pos[0]}px, ${pos[1]}px) scale(${pos[2]})`;
+			pos[0] += 20; //horizontal
+			pos[1] += 10; //vertical
             this.#trailEl.style.transform = `translate(${pos[0]}px, ${pos[1]}px) scale(${pos[2]})`;
 
             // since most images are large pixel arts, only do regular
