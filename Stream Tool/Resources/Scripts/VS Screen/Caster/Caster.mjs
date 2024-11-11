@@ -210,11 +210,6 @@ export class Caster {
                 <div class="casterTag"></div>
                 <div class="casterName"></div>
             </div>
-            <div class="casterSep"></div>
-            <div class="socialBox">
-                <div></div>
-                <div class="socialText"></div>
-            </div>
         `;
 
         casterInfoDiv.appendChild(newEl);
