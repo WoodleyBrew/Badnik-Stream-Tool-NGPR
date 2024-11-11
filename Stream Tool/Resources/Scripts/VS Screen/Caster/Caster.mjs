@@ -211,7 +211,17 @@ export class Caster {
                 <div class="casterName"></div>
             </div>
         `;
-
+		
+		 /** if i ever want to add caster socials back, add this below the last div
+		 
+		 <div class="casterSep"></div>
+            <div class="socialBox">
+                <div></div>
+                <div class="socialText"></div>
+            </div> 
+			
+			*/
+			
         casterInfoDiv.appendChild(newEl);
         return newEl;
 
