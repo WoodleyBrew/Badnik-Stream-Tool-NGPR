@@ -69,7 +69,7 @@ export class TeamScore {
 			//update text in the background
             updateText(this.#scoreNum, score, scoreSize);
 			
-			// fade in the round text
+			// fade in the score text
             fadeIn(this.#scoreNum, fadeInTimeSc, fadeInDelay);
 
         }
@@ -111,7 +111,7 @@ export class TeamScore {
         if (bo == "X") {
             this.#scoreNum.style.display = "flex";
         } else {
-            this.#scoreNum.style.display = "none";
+            this.#scoreNum.style.display = "flex";
         }
 
         // move images to compensate for new image width

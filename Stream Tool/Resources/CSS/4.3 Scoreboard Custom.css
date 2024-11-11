@@ -190,7 +190,7 @@ body {
     align-items: center;
     width: 380px;
     height: 43px;
-    transform: translate(5px, -100px);
+    transform: translate(-23px, -32px);
 }
 .topBarDoubles {
     width: 285px;
@@ -198,9 +198,7 @@ body {
 	text-align: center;
     justify-content: center;
 }
-.topBarSinglesNum {
-    transform: translate(-23px, -32px);
-}
+
 
 .topBarTexts {
     display: flex;

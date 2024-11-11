@@ -31,17 +31,8 @@ export class Score {
 
         if (bestOf.getBo() != "X") { // if score ticks are visible
 
-            let result = 0;
-
-            // if a score tick is checked, add +1 to the result variable
-            for (let i = 0; i < this.#scoreEls.length; i++) {
-                if (this.#scoreEls[i].checked) {
-                    result++;
-                }            
-            }
+            return Number(this.#scoreNumEl.value);
     
-            return result;
-
         } else { // if we are using actual numbers
 
             return Number(this.#scoreNumEl.value);
@@ -90,21 +81,13 @@ export class Score {
     
         if (mode == 5) {
 
-            this.#setChecksDisplay("block");
-            this.#scoreNumEl.style.display = "none";
-
-            if (this.getScore() > 3) {
-                this.setScore(3);
-            }
+			this.#setChecksDisplay("none");
+            this.#scoreNumEl.style.display = "block";
 
         } else if (mode == 3) {
 
-            this.#setChecksDisplay("block");
-            this.#scoreEls[2].style.display = "none";
-
-            if (this.getScore() > 2) {
-                this.setScore(2);
-            }
+            this.#setChecksDisplay("none");
+            this.#scoreNumEl.style.display = "block";
 
         } else {
             
