@@ -116,10 +116,10 @@ body {
     align-items: center;
     font-size: 26px;
     color: black;
-    border-left: 35px solid;
-    border-right: 35px solid;
+    border-left: 25px solid;
+    border-right: 25px solid;
     border-image: url('../Overlay/Bracket/Border\ White.png') 0 35 fill / 0 35px;
-    margin-left: -35px;
+    margin-left: 0px;
     min-width: 18px;
 }
 
