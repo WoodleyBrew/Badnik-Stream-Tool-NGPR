@@ -2,7 +2,7 @@ import { showScoreMode } from "./Score/Scores.mjs";
 
 class BestOf {
 
-    #currentBestOf = 5;
+    #currentBestOf = "X";
     #bestOfEl = document.getElementById("bestOf");
     
     constructor() {
@@ -21,47 +21,35 @@ class BestOf {
     }
 
     #nextBestOf() {
-        if (this.#currentBestOf == 5) {
-            this.setBo(3);
-        } else if (this.#currentBestOf == 3) {
-            this.setBo("X")
-        } else if (this.#currentBestOf == "X") {
+        if (this.#currentBestOf == "X") {
             this.setBo(5);
+        } else if (this.#currentBestOf == 5) {
+            this.setBo("X")
         }
     }
 
     #changeBestOf(value) {
 
-        if (value == 3) {
-
-            this.#currentBestOf = 3;
-
-            // change the visual text
-            this.#bestOfEl.innerHTML = "Best of 3";
-            this.#bestOfEl.title = "Click to change the scoring to Best of X";
-
-            // hide the last score tick from the score ticks
-            showScoreMode(3);
-
-        } else if (value == "X") {
+        if (value == "X") {
 
             this.#currentBestOf = "X";
 
-            this.#bestOfEl.innerHTML = "Best of X";
-            this.#bestOfEl.title = "Click to change the scoring to Best of 5";
+            // change the visual text
+            this.#bestOfEl.innerHTML = "Numbers";
+            this.#bestOfEl.title = "Click to change score input mode to numbers";
 
-            showScoreMode("X");
-            
+            // hide the last score tick from the score ticks
+            showScoreMode(5);
 
         } else if (value == 5) {
 
             this.#currentBestOf = 5;
 
-            this.#bestOfEl.innerHTML = "Best of 5";
-            this.#bestOfEl.title = "Click to change the scoring to Best of 3";
+            this.#bestOfEl.innerHTML = "Ticks";
+            this.#bestOfEl.title = "Click to change score input mode to ticks";
 
-            showScoreMode(5);
-
+            showScoreMode("X");
+            
         }
 
     }
