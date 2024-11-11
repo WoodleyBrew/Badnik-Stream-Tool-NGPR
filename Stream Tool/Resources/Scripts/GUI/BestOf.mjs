@@ -35,7 +35,7 @@ class BestOf {
             this.#currentBestOf = "X";
 
             // change the visual text
-            this.#bestOfEl.innerHTML = "Ticks";
+            this.#bestOfEl.innerHTML = "Numbers";
             this.#bestOfEl.title = "Click to change score input mode to ticks";
 
             showScoreMode("X");
@@ -44,7 +44,7 @@ class BestOf {
 
             this.#currentBestOf = 5;
 
-            this.#bestOfEl.innerHTML = "Numbers";
+            this.#bestOfEl.innerHTML = "Ticks";
             this.#bestOfEl.title = "Click to change score input mode to numbers";
   
 			// hide the last score tick from the score ticks
