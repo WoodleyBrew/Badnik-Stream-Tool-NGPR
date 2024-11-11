@@ -2,7 +2,7 @@ import { showScoreMode } from "./Score/Scores.mjs";
 
 class BestOf {
 
-    #currentBestOf = "X";
+    #currentBestOf = "5";
     #bestOfEl = document.getElementById("bestOf");
     
     constructor() {
@@ -35,20 +35,20 @@ class BestOf {
             this.#currentBestOf = "X";
 
             // change the visual text
-            this.#bestOfEl.innerHTML = "Numbers";
-            this.#bestOfEl.title = "Click to change score input mode to numbers";
+            this.#bestOfEl.innerHTML = "Ticks";
+            this.#bestOfEl.title = "Click to change score input mode to ticks";
 
-            // hide the last score tick from the score ticks
-            showScoreMode(5);
+            showScoreMode("X");
 
         } else if (value == 5) {
 
             this.#currentBestOf = 5;
 
-            this.#bestOfEl.innerHTML = "Ticks";
-            this.#bestOfEl.title = "Click to change score input mode to ticks";
-
-            showScoreMode("X");
+            this.#bestOfEl.innerHTML = "Numbers";
+            this.#bestOfEl.title = "Click to change score input mode to numbers";
+  
+			// hide the last score tick from the score ticks
+            showScoreMode(5);
             
         }
 
