@@ -1,5 +1,5 @@
 import { viewport } from "./Viewport.mjs";
-// import { charFinder } from "./Finder/Char Finder.mjs";
+import { charFinder } from "./Finder/Char Finder.mjs";
 import { players } from "./Player/Players.mjs";
 import { wl } from "./WinnersLosers.mjs";
 import { inside, stPath } from "./Globals.mjs";
@@ -18,7 +18,7 @@ class GuiSettings {
     // #HDCheck = document.getElementById('forceHD');
     // #noLoACheck = document.getElementById('noLoAHD');
 
-    // #wsCheck = document.getElementById('workshopToggle');
+    #wsCheck = document.getElementById('workshopToggle');
     #customRound = document.getElementById('customRound');
     #forceWLCheck = document.getElementById('forceWLToggle');
     #scoreAutoCheck = document.getElementById("scoreAutoUpdate");
@@ -46,13 +46,13 @@ class GuiSettings {
         // this.#noLoACheck.addEventListener("click", () => {this.toggleNoLoA()});
 
         // gui settings listeners
-        /* this.#wsCheck.addEventListener("click", () => {
+        this.#wsCheck.addEventListener("click", () => {
             if (inside.electron) {
                 this.toggleWs();
             } else {
                 this.sendWsToggle();
             }            
-        }); */
+        }); 
         this.#customRound.addEventListener("click", () => {this.toggleCustomRound()});
         this.#forceWLCheck.addEventListener("click", () => {this.toggleForceWL()});
         this.#scoreAutoCheck.addEventListener("click", () => {
@@ -104,7 +104,7 @@ class GuiSettings {
         // if (guiSettings.forceHD) this.#noLoACheck.disabled = false;
         // this.#noLoACheck.checked = guiSettings.noLoAHD;
 
-        // this.#wsCheck.checked = guiSettings.workshop;
+        this.#wsCheck.checked = guiSettings.workshop;
         // if (guiSettings.workshop) this.#altArtCheck.disabled = false;
         if (guiSettings.customRound) this.#customRound.click();
         if (guiSettings.forceWL) this.#forceWLCheck.click();
@@ -220,7 +220,7 @@ class GuiSettings {
 
     } */
 
-    /* setWs(value) {
+    setWs(value) {
         this.#wsCheck.checked = value;
     }
     isWsChecked() {
@@ -238,22 +238,15 @@ class GuiSettings {
             await players[i].charChange("Random");
         }
 
-        // disable or enable alt arts checkbox
-        this.#altArtCheck.disabled = !this.isWsChecked();
-        if (this.#altArtCheck.disabled) {
-            this.#altArtCheck.checked = false;
-            await this.save("forceAlt", false);
-        }
-
         // save current checkbox value to the settings file
         await this.save("workshop", this.isWsChecked());
 
-    } */
+    } 
     /** Will send a signal to the GUI to toggle current WS values */
-    /* async sendWsToggle() {
+    async sendWsToggle() {
         const remote = await import("./Remote Requests.mjs");
         remote.sendRemoteData({message: "toggleWs", value: this.isWsChecked()});
-    } */
+    }
 
     setForceWL(value) {
         this.#forceWLCheck.checked = value;

@@ -1,0 +1,40 @@
+{
+    "skinList": [
+        {
+            "name": "Sheik (1)"
+        },
+        {
+            "name": "Sheik (2)"
+        },
+        {
+            "name": "Sheik (3)"
+        },
+        {
+            "name": "Sheik (4)"
+        },
+        {
+            "name": "Sheik (5)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 10,
+            "y": -70,
+            "scale": 3
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -585,
+            "y": -500,
+            "scale": 2.5
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

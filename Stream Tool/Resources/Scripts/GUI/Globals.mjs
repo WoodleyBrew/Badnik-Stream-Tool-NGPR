@@ -12,7 +12,7 @@ export const stPath = {
     char : "",
     charRandom : realPath + '/Characters/Random',
     charBase : realPath + '/Characters',
-    /** charWork : realPath + '/Characters/_Workshop', */
+    charWork : realPath + '/Characters/_Melee',
     overlay: realPath + '/Overlay',
     text : realPath + '/Texts',
     scripts: realPath + '/Scripts'

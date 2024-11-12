@@ -1,0 +1,40 @@
+{
+    "skinList": [
+        {
+            "name": "Zelda (1)"
+        },
+        {
+            "name": "Zelda (2)"
+        },
+        {
+            "name": "Zelda (3)"
+        },
+        {
+            "name": "Zelda (4)"
+        },
+        {
+            "name": "Zelda (5)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 30,
+            "y": 102,
+            "scale": 3
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -565,
+            "y": 660,
+            "scale": 2.2
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

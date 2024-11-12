@@ -1,0 +1,40 @@
+{
+    "skinList": [
+        {
+            "name": "Marth (1)"
+        },
+        {
+            "name": "Marth (2)"
+        },
+        {
+            "name": "Marth (3)"
+        },
+        {
+            "name": "Marth (4)"
+        },
+        {
+            "name": "Marth (5)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 40,
+            "y": 111,
+            "scale": 3.2
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -425,
+            "y": 840,
+            "scale": 2.5
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

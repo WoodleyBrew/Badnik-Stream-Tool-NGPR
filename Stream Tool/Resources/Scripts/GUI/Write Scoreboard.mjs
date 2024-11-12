@@ -78,7 +78,7 @@ export async function writeScoreboard() {
         customRound: settings.isCustomRoundChecked(),
         // forceHD: settings.isHDChecked(),
         // noLoAHD: settings.isNoLoAChecked(),
-        // workshop: settings.isWsChecked(),
+        workshop: settings.isWsChecked(),
         forceWL: settings.isForceWLChecked(),
         roundIndex: round.getIndex(),
         roundNumber: round.getNumber(),

@@ -69,8 +69,8 @@ export async function getCharacterList() {
             .filter(dirent => dirent.isDirectory())
             .map(dirent => dirent.name)
             .filter((name) => {
-                // if the folder name contains 'Random', exclude it
-                if (name != "Random") {
+                // if the folder name contains '_Melee' or 'Random', exclude it
+                if (name != "_Melee" && name != "Random") {
                     return true;
                 }
             }

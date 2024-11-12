@@ -1,0 +1,40 @@
+{
+    "skinList": [
+        {
+            "name": "Ganondorf (1)"
+        },
+        {
+            "name": "Ganondorf (2)"
+        },
+        {
+            "name": "Ganondorf (3)"
+        },
+        {
+            "name": "Ganondorf (4)"
+        },
+        {
+            "name": "Ganondorf (5)"
+        }     
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": -25,
+            "y": 75,
+            "scale": 3
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -785,
+            "y": 370,
+            "scale": 1.875
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

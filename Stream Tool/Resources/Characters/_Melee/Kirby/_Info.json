@@ -1,0 +1,43 @@
+{
+    "skinList": [
+        {
+            "name": "Kirby (1)"
+        },
+        {
+            "name": "Kirby (2)"
+        },
+        {
+            "name": "Kirby (3)"
+        },
+        {
+            "name": "Kirby (4)"
+        },
+        {
+            "name": "Kirby (5)"
+        },
+        {
+            "name": "Kirby (6)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 37,
+            "y": -7,
+            "scale": 1.5
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -485,
+            "y": 80,
+            "scale": 1.7
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

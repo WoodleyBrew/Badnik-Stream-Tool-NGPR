@@ -1,0 +1,40 @@
+{
+    "skinList": [
+        {
+            "name": "Roy (1)"
+        },
+        {
+            "name": "Roy (2)"
+        },
+        {
+            "name": "Roy (3)"
+        },
+        {
+            "name": "Roy (4)"
+        },
+        {
+            "name": "Roy (5)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 35,
+            "y": 65,
+            "scale": 3.3
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -465,
+            "y": 390,
+            "scale": 2.5
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

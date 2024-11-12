@@ -1,0 +1,40 @@
+{
+    "skinList": [
+        {
+            "name": "Pichu (1)"
+        },
+        {
+            "name": "Pichu (2)"
+        },
+		{
+            "name": "Pichu (3)"
+        },
+		{
+            "name": "Pichu (4)"
+        },
+		{
+            "name": "Pichu (5)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 30,
+            "y": 2,
+            "scale": 1.3
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -525,
+            "y": 70,
+            "scale": 1.3
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

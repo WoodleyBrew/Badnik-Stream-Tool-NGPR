@@ -38,7 +38,7 @@ async function init() {
     
     // we need to set the current char path
     await settings.load();
-    stPath.char = stPath.charBase;
+    stPath.char = settings.isWsChecked() ? stPath.charWork : stPath.charBase;
 
     // colors need to be up and running before players
     await initColors();

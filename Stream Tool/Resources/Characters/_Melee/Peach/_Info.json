@@ -1,0 +1,40 @@
+{
+    "skinList": [
+        {
+            "name": "Peach (1)"
+        },
+        {
+            "name": "Peach (2)"
+        },
+        {
+            "name": "Peach (3)"
+        },
+        {
+            "name": "Peach (4)"
+        },
+        {
+            "name": "Peach (5)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 38,
+            "y": 87,
+            "scale": 2.8
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -485,
+            "y": 770,
+            "scale": 2.5
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

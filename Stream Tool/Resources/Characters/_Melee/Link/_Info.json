@@ -1,0 +1,40 @@
+{
+    "skinList": [
+        {
+            "name": "Link (1)"
+        },
+        {
+            "name": "Link (2)"
+        },
+        {
+            "name": "Link (3)"
+        },
+        {
+            "name": "Link (4)"
+        },
+        {
+            "name": "Link (5)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 60,
+            "y": 60,
+            "scale": 2.7
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -325,
+            "y": 390,
+            "scale": 2
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

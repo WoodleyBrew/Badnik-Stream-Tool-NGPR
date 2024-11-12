@@ -1,0 +1,40 @@
+{
+    "skinList": [
+        {
+            "name": "Mario (1)"
+        },
+        {
+            "name": "Mario (2)"
+        },
+        {
+            "name": "Mario (3)"
+        },
+        {
+            "name": "Mario (4)"
+        },
+        {
+            "name": "Mario (5)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 45,
+            "y": 47,
+            "scale": 2
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -500,
+            "y": 300,
+            "scale": 1.5
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

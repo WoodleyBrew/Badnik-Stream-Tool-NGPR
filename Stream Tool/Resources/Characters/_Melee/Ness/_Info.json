@@ -1,0 +1,37 @@
+{
+    "skinList": [
+        {
+            "name": "Ness (1)"
+        },
+        {
+            "name": "Ness (2)"
+        },
+        {
+            "name": "Ness (3)"
+        },
+        {
+            "name": "Ness (4)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 30,
+            "y": 25,
+            "scale": 1.5
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -505,
+            "y": 190,
+            "scale": 1.4
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

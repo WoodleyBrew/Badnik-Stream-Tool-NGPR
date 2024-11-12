@@ -1,0 +1,43 @@
+{
+    "skinList": [
+        {
+            "name": "Yoshi (1)"
+        },
+        {
+            "name": "Yoshi (2)"
+        },
+        {
+            "name": "Yoshi (3)"
+        },
+        {
+            "name": "Yoshi (4)"
+        },
+        {
+            "name": "Yoshi (5)"
+        },
+        {
+            "name": "Yoshi (6)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 36,
+            "y": 35,
+            "scale": 1.6
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -485,
+            "y": 220,
+            "scale": 1.4
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}

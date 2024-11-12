@@ -1,0 +1,40 @@
+{
+    "skinList": [
+        {
+            "name": "Young Link (1)"
+        },
+        {
+            "name": "Young Link (2)"
+        },
+		{
+            "name": "Young Link (3)"
+        },
+		{
+            "name": "Young Link (4)"
+        },
+		{
+            "name": "Young Link (5)"
+        }
+    ],
+    "scoreboard": {
+        "neutral": {
+            "x": 60,
+            "y": 55,
+            "scale": 2.5
+        }
+    },
+    "vsScreen": {
+        "neutral": {
+            "x": -285,
+            "y": 390,
+            "scale": 2
+        }
+    },
+    "gui": {
+        "neutral": {
+            "x": 5,
+            "y": -5,
+            "scale": 0.85
+        }
+    }
+}
