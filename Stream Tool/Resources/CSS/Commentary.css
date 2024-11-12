@@ -277,8 +277,8 @@ body {
 }
 
 #casters {
-    bottom: 9.8%;
-    left: 26%;
+    bottom: 10.2%;
+    left: 25%;
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 5px black;
@@ -287,7 +287,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 550px;
+    gap: 600px;
     flex-direction: row;
 }
 

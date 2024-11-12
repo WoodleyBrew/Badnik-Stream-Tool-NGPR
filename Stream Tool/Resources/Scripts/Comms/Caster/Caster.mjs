@@ -7,7 +7,7 @@ import { fadeInTimeSc, fadeOutTimeSc } from "../ScGlobals.mjs";
 
 const casterInfoDiv = document.getElementById("casters");
 
-const nameSize = 48;
+const nameSize = 40;
 const tagSize = 15;
 const socialSize = 19;
 
@@ -53,7 +53,6 @@ export class Caster {
 	setName(text) {
         this.#name = text;
 		updateText(this.#nameEl, text || "-", nameSize);
-		resizeText(this.#nameEl.parentElement);
 	}
 
     /**
@@ -63,7 +62,6 @@ export class Caster {
 	setTag(text) {
         this.#tag = text;
 		updateText(this.#tagEl, text, tagSize);
-		resizeText(this.#tagEl.parentElement);
 	}
     
     /**
