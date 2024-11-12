@@ -1,10 +1,10 @@
 {
-  "name": "project-st-gui",
-  "version": "2.1.0",
-  "description": "An electron interface for Project+ tournament streams.",
+  "name": "badnik-st-gui",
+  "version": "0.5.0",
+  "description": "An electron interface for Project+ and Melee tournament streams.",
   "main": "index.js",
-  "repository": "https://github.com/ilikepizza107/Project-Plus-Stream-Tool",
-  "author": "Readek & ilikepizza107",
+  "repository": "https://github.com/Motobug/Badnik-Stream-Tool",
+  "author": "Motobug, Readek, & ilikepizza107",
   "license": "MIT",
   "devDependencies": {
     "electron": "^28.0.0",
@@ -15,7 +15,7 @@
     "dist": "electron-builder"
   },
   "build": {
-    "appId": "project.st.gui",
+    "appId": "badnik.st.gui",
     "linux": {
       "target": "AppImage"
     },

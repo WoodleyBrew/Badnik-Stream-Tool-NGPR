@@ -109,7 +109,7 @@ function createWindow() {
 
         backgroundColor: "#383838",
 
-        title: "Project+ Stream Tool v2 [developer build]", // will get overwitten by gui html title
+        title: "Badnik Stream Tool v0.5b [developer build]", // will get overwitten by gui html title
         icon: path.join(nodePath, 'icon.png'),
 
         webPreferences: {
