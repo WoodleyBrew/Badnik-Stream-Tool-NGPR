@@ -1,13 +1,13 @@
 
 <p align="center">
 
-  <img src="https://github.com/Motobug/Smashing-Grounds-Stream-Tool/blob/master/Preview.png" alt="Preview">
+  <img src="https://github.com/Motobug/Badnik-Stream-Tool/blob/master/Preview.png" alt="Preview">
   
 </p>
 
-<h1 align="center">Project+ Stream Tool</h1>
+<h1 align="center">Badnik Stream Tool</h1>
 
-This is a Project+ stream tool based on [ilikepizza's](https://github.com/ilikepizza107/Project-Plus-Stream-Tool) with a focus on readability, 4:3, and attractive design. 
+This is a stream tool based on [Readek's](https://github.com/Readek/RoA-Stream-Tool) and [ilikepizza's](https://github.com/ilikepizza107/Project-Plus-Stream-Tool), with a focus on readability, 4:3, and attractive design. 
 ---
 
 ## Features
