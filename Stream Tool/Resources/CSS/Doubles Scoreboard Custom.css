@@ -123,7 +123,25 @@ body {
 	left: -545px;
 }
 
+#p1CharaMask {
+	left: 596px;
+    top: 220px;
+}
 
+#p3CharaMask {
+	left: 596px;
+    top: 391px;
+}
+
+#p2CharaMask {
+	left: -316px;
+    top: 220px;
+}
+
+#p4CharaMask {
+	left: -316px;
+    top: 391px;
+}
 
 
 .flipBack {
@@ -201,27 +219,41 @@ body {
 	text-align: center;
 	justify-content: center;
     align-items: center;
-    width: 380px;
+    width: 1920px;
     height: 303px;
-    transform: translate(-23px, -32px);
+    transform: translate(0px, -32px);
 }
 .topBarDoubles {
-    width: 285px;
-	height: 303px;
-    transform: translate(-23px, -32px);
+    width: 3250px;
+	height: 300px;
+    transform: translate(-200px, 221px);
 	text-align: center;
     justify-content: center;
 }
 
 
-.topBarTexts {
+.topBarLeft {
     display: flex;
 	text-align: center;
     border-right: 0px solid;
     border-left: 0px solid;
-    gap: 0px;
-    margin-top: 50px;
-	font-size: 24px
+    gap: 141px;
+	transform: translate(-625px, 0px);
+	flex-direction: column;
+    margin-top: 0px;
+	font-size: 24px;
+}
+
+.topBarRight {
+    display: flex;
+	text-align: center;
+    border-right: 0px solid;
+    border-left: 0px solid;
+    gap: 141px;
+	transform: translate(1538px, 0px);
+	flex-direction: column;
+    margin-top: 0px;
+	font-size: 24px;
 }
 
 /* Flags needed for pronoun text to be centered */
@@ -232,35 +264,8 @@ body {
 	justify-content: center;
     align-items: center;
 }
+	
 
-/* locations of left and right pronouns respecitvely */
-.topBarProns1 {
-    display: none;
-    color: white;
-	text-align: center;
-	transform: translate(14px, -27px);
-}
-
-.topBarProns2 {
-    display: none;
-	text-align: center;
-    color: white;
-	transform: translate(8px, -28px);	
-}
-
-.topBarProns3 {
-    display: none;
-    color: white;
-	text-align: center;
-	transform: translate(-84px, -27px);
-}
-
-.topBarProns4 {
-    display: none;
-	text-align: center;
-    color: white;
-	transform: translate(88px, -118px);	
-}
 
 /* Main round placement */
 #roundDiv {
