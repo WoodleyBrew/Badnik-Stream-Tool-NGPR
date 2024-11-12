@@ -7,7 +7,7 @@ import { fadeIn } from "../../Utils/Fade In.mjs";
 import { fadeOut } from "../../Utils/Fade Out.mjs";
 import { fadeInTimeSc, fadeOutTimeSc } from "../ScGlobals.mjs";
 
-let scoreSize = 36;
+let scoreSize = 85;
 
 export class TeamScore {
 
