@@ -1,8 +1,8 @@
 {
-  "guiWidth": 1336,
-  "guiHeight": 708,
+  "guiWidth": 916,
+  "guiHeight": 271,
   "allowIntro": false,
-  "melee": true,
+  "melee": false,
   "forceWL": false,
   "customRound": false,
   "invertScore": false,

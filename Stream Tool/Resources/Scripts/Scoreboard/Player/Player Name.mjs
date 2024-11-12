@@ -7,8 +7,8 @@ import { fadeInTimeSc, fadeOutTimeSc } from "../ScGlobals.mjs";
 
 const playerSize = 30;
 const tagSize = 22;
-const playerSizeDubs = 20;
-const tagSizeDubs = 15;
+const playerSizeDubs = 30;
+const tagSizeDubs = 22;
 
 export class PlayerName {
 

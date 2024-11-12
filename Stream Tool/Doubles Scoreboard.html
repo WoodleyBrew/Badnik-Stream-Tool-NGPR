@@ -2,25 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Project+ 16.9 Game Overlay</title>
-    <script src="Resources/Scripts/16.9 Scoreboard.js" type="module"></script>
-    <link rel="stylesheet" href="Resources/CSS/16.9 Scoreboard.css">
-    <link rel="stylesheet" href="Resources/CSS/16.9 Scoreboard Custom.css">
+    <title>Doubles Game Overlay</title>
+    <script src="Resources/Scripts/Doubles Scoreboard.js" type="module"></script>
+    <link rel="stylesheet" href="Resources/CSS/Doubles Scoreboard.css">
+    <link rel="stylesheet" href="Resources/CSS/Doubles Scoreboard Custom.css">
 </head>
 
-<body>
-	
-	<div>
-		<img class="absol" src="Resources/Overlay/Scoreboard.png"></img>
+<div id="overlay" class="absol">
+	<img class="absol" src="Resources/Overlay/Scoreboard_Doubles.png"></img>
+</div>
 
+<body>
+
+    <div>
+	
         <div id="scoreboardL" class="scoreboard absol">
 
             <div class="topBarMask absol">
                 <div class="absol">
                     <div class="topBarTexts">
-                        <span id="p3Pronouns" class="topBarProns topBarText dubEL"></span>
+                        <span id="p3Pronouns" class="topBarProns3 topBarText dubEL"></span>
                         <span id="wlTextL" class="wlText topBarText"></span>
-                        <span id="p1Pronouns" class="topBarProns topBarText"></span>
+                        <span id="p1Pronouns" class="topBarProns1 topBarText"></span>
                     </div>
                 </div>
             </div>
@@ -81,9 +84,9 @@
             <div class="topBarMask absol">
                 <div class="absol flipBack">
                     <div class="topBarTexts">
-                        <span id="p2Pronouns" class="topBarProns topBarText"></span>
+                        <span id="p2Pronouns" class="topBarProns2 topBarText"></span>
                         <span id="wlTextR" class="wlText topBarText"></span>
-                        <span id="p4Pronouns" class="topBarProns topBarText dubEL"></span>
+                        <span id="p4Pronouns" class="topBarProns4 topBarText dubEL"></span>
                     </div>
                 </div>
             </div>
@@ -189,7 +192,7 @@
     </div>
 
     <div id="connErrorDiv">
-        Can't connect with GUI, attempting to reconnect every 5 seconds...
+        GUI not open! Attempting to reconnect every 5 seconds...
     </div>
 
 </body>
