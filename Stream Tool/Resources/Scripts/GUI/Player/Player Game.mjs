@@ -208,37 +208,12 @@ export class PlayerGame extends Player {
 
     /** Sets the player's VS Screen background video src */
     async setVsBg() {
-
-        let vsBG = `${this.char}/BG.webm`;
-        let trueBGPath = stPath.char;
-
-        /* if (this.vsSkin.name.includes("LoA") && !settings.isNoLoAChecked()) {
-            // show LoA background if the skin is LoA
-            vsBG = 'BG LoA.webm';
-            trueBGPath = stPath.charBase;;
-        } else if (this.vsSkin.name == "Ragnir") {
-            // Ragnir shows the default stage in the actual game
-            vsBG = 'BG.webm';
-            trueBGPath = stPath.charBase;
-        } else if (this.char == "Shovel Knight" && this.vsSkin.name == "Golden") {
-             // why not
-            vsBG = `${this.char}/BG Golden.webm`;
-        } else if (this.charInfo.vsScreen) { // safety check
-            if (this.charInfo.vsScreen.background) { // if the character has a specific BG
-                vsBG = `${this.charInfo.vsScreen.background}/BG.webm`;
-            }
-        } */
-
-        // if it doesnt exist, use a default BG
-        if (!await fileExists(`${trueBGPath}/${vsBG}`)) {
-            this.vsBgSrc = "Resources/Characters/BG.webm";
-        } else {
-            if (settings.isWsChecked()) {
-                this.vsBgSrc = `Resources/Characters/_Workshop/${vsBG}`;
+		
+            if (settings.isMeleeChecked()) {
+                this.vsBgSrc = `Resources/Characters/_Melee/BG.webm`;
             } else {
-                this.vsBgSrc = `Resources/Characters/${vsBG}`;
+                this.vsBgSrc = `Resources/Characters/BG.webm`;
             }
-        }
 
     }
 

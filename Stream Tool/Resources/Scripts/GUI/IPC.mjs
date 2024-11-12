@@ -118,12 +118,12 @@ ipc.on('remoteGuiData', async (event, data) => {
         await playerFinder.setPlayerPresets();
         await commFinder.setCasterPresets();
 		
-	} else if (jsonData.message == "toggleWs") {
+	} else if (jsonData.message == "toggleMelee") {
 
         // when a remote GUI clicks on the workshop toggle
-        settings.setWs(jsonData.value);
-        await settings.toggleWs();
-        ipc.send("sendData", JSON.stringify({id: "remoteGUI", message: "toggleWs"}, null, 2));
+        settings.setMelee(jsonData.value);
+        await settings.toggleMelee();
+        ipc.send("sendData", JSON.stringify({id: "remoteGUI", message: "toggleMelee"}, null, 2));
         
     } else if (jsonData.message == "remoteBracket") {
 
@@ -139,5 +139,3 @@ ipc.on('remoteGuiData', async (event, data) => {
 export function updateRemotePresets() {
     ipc.send("sendData", JSON.stringify({id: "remoteGUI", message: "updatePresets"}, null, 2));
 }
-
-

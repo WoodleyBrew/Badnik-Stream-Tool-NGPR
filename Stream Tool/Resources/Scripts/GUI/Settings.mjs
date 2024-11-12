@@ -18,7 +18,7 @@ class GuiSettings {
     // #HDCheck = document.getElementById('forceHD');
     // #noLoACheck = document.getElementById('noLoAHD');
 
-    #wsCheck = document.getElementById('workshopToggle');
+    #meleeCheck = document.getElementById('meleeToggle');
     #customRound = document.getElementById('customRound');
     #forceWLCheck = document.getElementById('forceWLToggle');
     #scoreAutoCheck = document.getElementById("scoreAutoUpdate");
@@ -46,11 +46,11 @@ class GuiSettings {
         // this.#noLoACheck.addEventListener("click", () => {this.toggleNoLoA()});
 
         // gui settings listeners
-        this.#wsCheck.addEventListener("click", () => {
+        this.#meleeCheck.addEventListener("click", () => {
             if (inside.electron) {
-                this.toggleWs();
+                this.toggleMelee();
             } else {
-                this.sendWsToggle();
+                this.sendMeleeToggle();
             }            
         }); 
         this.#customRound.addEventListener("click", () => {this.toggleCustomRound()});
@@ -104,7 +104,7 @@ class GuiSettings {
         // if (guiSettings.forceHD) this.#noLoACheck.disabled = false;
         // this.#noLoACheck.checked = guiSettings.noLoAHD;
 
-        this.#wsCheck.checked = guiSettings.workshop;
+        this.#meleeCheck.checked = guiSettings.melee;
         // if (guiSettings.workshop) this.#altArtCheck.disabled = false;
         if (guiSettings.customRound) this.#customRound.click();
         if (guiSettings.forceWL) this.#forceWLCheck.click();
@@ -220,16 +220,16 @@ class GuiSettings {
 
     } */
 
-    setWs(value) {
-        this.#wsCheck.checked = value;
+    setMelee(value) {
+        this.#meleeCheck.checked = value;
     }
-    isWsChecked() {
-        return this.#wsCheck.checked;
+    isMeleeChecked() {
+        return this.#meleeCheck.checked;
     }
-    async toggleWs() {
+    async toggleMelee() {
 
         // set a new character path
-        stPath.char = this.isWsChecked() ? stPath.charWork : stPath.charBase;
+        stPath.char = this.isMeleeChecked() ? stPath.charWork : stPath.charBase;
 
         // reload character lists
         await charFinder.loadCharacters();
@@ -239,13 +239,13 @@ class GuiSettings {
         }
 
         // save current checkbox value to the settings file
-        await this.save("workshop", this.isWsChecked());
+        await this.save("melee", this.isMeleeChecked());
 
     } 
-    /** Will send a signal to the GUI to toggle current WS values */
-    async sendWsToggle() {
+    /** Will send a signal to the GUI to toggle current Melee setting */
+    async sendMeleeToggle() {
         const remote = await import("./Remote Requests.mjs");
-        remote.sendRemoteData({message: "toggleWs", value: this.isWsChecked()});
+        remote.sendRemoteData({message: "toggleMelee", value: this.isMeleeChecked()});
     }
 
     setForceWL(value) {

@@ -40,9 +40,9 @@ export async function updateGUI(data) {
         settings.setNoLoA(data.noLoAHD);
         await settings.toggleNoLoA();
     } */
-    if (data.workshop != settings.isWsChecked()) {
-        settings.setWs(data.workshop);
-        await settings.toggleWs();
+    if (data.melee != settings.isMeleeChecked()) {
+        settings.setMelee(data.workshop);
+        await settings.toggleMelee();
     } 
     if (data.customRound != settings.isCustomRoundChecked()) {
         settings.setCustomRound(data.customRound);

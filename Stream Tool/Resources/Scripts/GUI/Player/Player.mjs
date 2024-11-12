@@ -239,7 +239,7 @@ export class Player {
     async getBrowserSrc(char, skin, extraPath, failPath) {
 
         let browserCharPath = "Resources/Characters";
-        if (settings.isWsChecked()) {
+        if (settings.isMeleeChecked()) {
             browserCharPath = "Resources/Characters/_Melee";
         } 
         
