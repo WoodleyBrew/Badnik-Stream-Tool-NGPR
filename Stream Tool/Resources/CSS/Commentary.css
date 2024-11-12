@@ -356,17 +356,17 @@ body {
 }
 
 .twitterIcon {
-    height: 18px;
-    width: 18px;
+    height: 0px;
+    width: 0px;
 }
 .twitchIcon {
-    height: 17px;
-    width: 17px;
+    height: 0px;
+    width: 0px;
     transform: translate(-2px, -1px);
 }
 .ytIcon {
-    height: 19px;
-    width: 19px;
+    height: 0px;
+    width: 0px;
     transform: translate(-1px, 0px);
 }
 .personIcon {
