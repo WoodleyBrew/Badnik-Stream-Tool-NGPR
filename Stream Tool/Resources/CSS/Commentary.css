@@ -277,8 +277,8 @@ body {
 }
 
 #casters {
-    bottom: 10.2%;
-    left: 25%;
+    bottom: 5.4%;
+    left: 25.8%;
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 5px black;
@@ -287,7 +287,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 600px;
+    gap: 582px;
     flex-direction: row;
 }
 
@@ -301,9 +301,10 @@ body {
 
 .casterNameBox {
     display: flex;
+	text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: 6px;
     min-height: 36px;
 }
 .casterName {
@@ -312,6 +313,7 @@ body {
 .casterTag {
     color: lightgrey;
     transform: translateY(4px);
+	
 }
 
 .casterSep {
@@ -321,13 +323,23 @@ body {
 }
 
 .socialBox {
+	position: flex;
     display: flex;
-    text-shadow: 2px 2px 5px black;
-    justify-content: center;
+	text-align: center;
+	justify-content: center;
     align-items: center;
-    gap: 2px;
-    min-height: 28px;
+    text-shadow: 2px 2px 5px black;
+    min-height: 80px;
 }
+
+.socialDiv {
+    display: flex;
+    flex-direction: column;
+    width: 185px;
+    margin: 0 -5px;
+    flex-shrink: 0;
+}
+
 .socialText {
     color: rgb(255, 255, 255);
 }
@@ -358,8 +370,8 @@ body {
     transform: translate(-1px, 0px);
 }
 .personIcon {
-    height: 20px;
-    width: 20px;
+    height: 0px;
+    width: 0px;
 }
 
 

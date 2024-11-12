@@ -150,7 +150,7 @@ class VodRename {
         if (this.#gameName) {
             this.#matchInfo.game = this.#gameName
         } else {
-            this.#matchInfo.game = (settings.isWsChecked() ? 'Rivals Workshop' : 'Rivals of Aether');
+            this.#matchInfo.game = (settings.isMeleeChecked() ? 'SSBM' : 'P+');
         }
         this.#matchString = this.#genString(this.#matchInfo);
     }

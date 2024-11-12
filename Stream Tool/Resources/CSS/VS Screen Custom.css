@@ -28,6 +28,7 @@ body {
     padding: 0px;
     margin: 0px;
     text-transform: none;
+	
 }
 
 
@@ -124,11 +125,11 @@ body {
     transform: rotate(-3.3deg);
     width: 940px;
     overflow: hidden;
-    font-size: 0px;
+    font-size: 32px;
 }
 .playerInfoDivL {
     bottom: 223px;
-    left: 1200px;
+    left: 40px;
     transform-origin: bottom left;
 }
 .playerInfoDivL1 {
@@ -141,8 +142,8 @@ body {
     transform-origin: top left;
 }
 .playerInfoDivR {
-    right: 1200px;
-    bottom: 278px;
+    right: 40px;
+    bottom: 274px;
     transform-origin: top right;
     flex-direction: row-reverse;
 }

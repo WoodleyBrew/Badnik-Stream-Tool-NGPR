@@ -116,6 +116,28 @@ class Casters {
                 }
             
             };
+
+            // same with pronouns and socials
+            if (this.#casters[i].haveSocialsChanged(data[i])) {
+
+                if (!current.startup) {
+                    allReady.push(this.#casters[i].fadeOutSocials().then(() => {
+                        this.#casters[i].setSocials(data[i]);
+                        this.#casters[i].updateSocialText(currentSocial);
+                        this.#casters[i].updateSocialIcon(currentSocial);
+                        this.#casters[i].fadeInSocials();
+                    }))
+                } else {
+                    this.#casters[i].setSocials(data[i]);
+                    this.#casters[i].updateSocialText(currentSocial);
+                    this.#casters[i].updateSocialIcon(currentSocial);
+                    this.#casters[i].fadeInSocials();
+                }
+
+                this.#rotateSocials();
+                
+            }
+
         }
 
         // this will wait for all fade out animations
@@ -128,7 +150,16 @@ class Casters {
     /** Initializes socials fading out and in on an interval */
     #initCarrousel() {
 
+        // generate a random beginning point
+        socialTurn = genRnd(0, maxSocials.length - 1);
+        currentSocial = maxSocials[socialTurn];
+        
+        // every x seconds
+        setInterval(() => {
+            
+            this.#rotateSocials();
 
+        }, socialInterval);
 
     }
 
@@ -154,8 +185,8 @@ class Casters {
             // check if casters have current social
             for (let i = 0; i < this.#casters.length; i++) {
                 if (this.#casters[i].hasSocial(currentSocial)) {
-                    socialsFound = false;
-                    someHaveSocial = false;
+                    socialsFound = true;
+                    someHaveSocial = true;
                     break;
                 }
             }
@@ -171,7 +202,16 @@ class Casters {
             
             antiLoopCounter++;
 
-        
+        }
+
+        // and update shown text
+        for (let i = 0; i < this.#casters.length && socialsFound; i++) {
+            this.#casters[i].fadeOutSocials().then(() => {
+                this.#casters[i].updateSocialText(currentSocial);
+                this.#casters[i].updateSocialIcon(currentSocial);
+                this.#casters[i].fadeInSocials();
+            })
+            
         }
 
     }

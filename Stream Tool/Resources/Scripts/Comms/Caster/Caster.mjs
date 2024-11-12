@@ -9,7 +9,7 @@ const casterInfoDiv = document.getElementById("casters");
 
 const nameSize = 40;
 const tagSize = 15;
-const socialSize = 19;
+const socialSize = 22;
 
 export class Caster {
 
