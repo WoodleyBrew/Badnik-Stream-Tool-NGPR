@@ -72,8 +72,8 @@ export class Caster {
      */
 	setSocials(data) {
 
-        this.#socials = data.socials;
-        this.#pronouns = data.pronouns;
+        /* this.#socials = data.socials; */ // hides comm socials on main scene
+        /* this.#pronouns = data.pronouns; */ // hides comm pronouns on main scene
 
 	}
 
