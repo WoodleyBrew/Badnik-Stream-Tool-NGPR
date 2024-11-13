@@ -7,8 +7,8 @@ import { fadeInTimeSc, fadeOutTimeSc } from "../ScGlobals.mjs";
 
 const playerSize = 42;
 const tagSize = 22;
-const playerSizeDubs = 20;
-const tagSizeDubs = 15;
+const playerSizeDubs = 0;
+const tagSizeDubs = 0;
 
 export class PlayerName {
 
@@ -158,9 +158,9 @@ export class PlayerName {
 
             // move that text
             if (this.#side == 1) {
-                this.#wrapperEl.style.left = "257px";
+                this.#wrapperEl.style.left = "2257px";
             } else {
-                this.#wrapperEl.style.right = "257px";
+                this.#wrapperEl.style.right = "2257px";
             }
 
         } else { // singles

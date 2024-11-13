@@ -41,7 +41,7 @@ class Gamemode {
 		r.style.setProperty("--scoreboardY", "var(--scoreboardYDoubles)");
 
         // update players for the new 2v2 positions
-        players.changeGm(this.getGm());
+        /* players.changeGm(this.getGm()); */
 
 		// update those team positions
 		teams.changeGm(this.getGm());

@@ -7,7 +7,7 @@ import { fadeIn } from "../../Utils/Fade In.mjs";
 import { fadeOut } from "../../Utils/Fade Out.mjs";
 import { fadeInTimeSc, fadeOutTimeSc } from "../ScGlobals.mjs";
 
-const scoreSize = 85;
+let scoreSize = 85;
 
 export class TeamScore {
 
@@ -152,12 +152,12 @@ export class TeamScore {
         if (gamemode == 2) { // doubles
             
             this.#scoreNum.classList.add("scoreNumDubs");
-            scoreSize = 30;
+            scoreSize = 85;
             
         } else { // singles
 
             this.#scoreNum.classList.remove("scoreNumDubs");
-            scoreSize = 36;
+            scoreSize = 85;
 
         }
 

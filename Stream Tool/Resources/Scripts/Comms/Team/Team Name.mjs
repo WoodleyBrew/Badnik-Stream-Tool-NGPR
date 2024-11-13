@@ -5,7 +5,7 @@ import { resizeText } from "../../Utils/Resize Text.mjs";
 import { updateText } from "../../Utils/Update Text.mjs";
 import { gamemode } from "../Gamemode Change.mjs";
 
-const teamSize = 22;
+const teamSize = 32;
 
 export class TeamName {
 

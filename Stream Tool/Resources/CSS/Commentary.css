@@ -18,9 +18,9 @@ override anything you want here.
     --scoreboardX: var(--scoreboardXSingles);
     --scoreboardY: var(--scoreboardYSingles);
     --scoreboardXSingles: 20px;
-    --scoreboardXDoubles: 300px;
+    --scoreboardXDoubles: 20px;
     --scoreboardYSingles: 485px;
-    --scoreboardYDoubles: 13px;
+    --scoreboardYDoubles: 485px;
     --colorL: #FFFFFF;
     --colorR: #FFFFFF;
 }
@@ -80,6 +80,17 @@ body {
     top: 4px;
 }
 
+/* moved offscreen */
+#p3CharaMask {
+	left: -596px;
+    top: 391px;
+}
+
+/* moved offscreen */
+#p4CharaMask {
+	left: -516px;
+    top: 391px;
+}
 
 .wrappers {
     position: absolute;
@@ -95,10 +106,10 @@ body {
 }
 
 .wrappersDubs {
-    width: 123px;
-    height: 30px;
-    line-height: 30px;
-    top: 32px;
+    width: 205px;
+    height: 36px;   
+    top: 2234px;
+    line-height: 32px;
 }
 
 .flipBack {
@@ -121,10 +132,10 @@ body {
 	text-shadow: 2px 2px 2px black;
 }
 #p3Wrapper {
-    left: 106px;
+    left: 1106px;
 }
 #p4Wrapper {
-    right: 106px;
+    right: 1106px;
 }
 
 .tags {
@@ -141,19 +152,25 @@ body {
 
 .teamName {
     position: absolute;
-    width: 275px;
+    width: 225px;
     height: 32px;
     line-height: 32px;
     text-align: center;
-    top: 67px;
+    top: -67px;
     opacity: 0;
     white-space: nowrap;
 }
 #teamNameL {
-    left: 115px;
+    left: 710px;
+	top: -300px;
+	text-align: left;
+	text-shadow: 2px 2px 2px black;
 }
 #teamNameR {
-    right: 115px;
+    right: 710px;
+	top: -300px;
+	text-align: right;
+	text-shadow: 2px 2px 2px black;
 }
 
 /* Main score placement; font size lives in Team Score.mjs */
@@ -178,8 +195,8 @@ body {
 }
 
 .scoreNumDubs {
-    top: 463px;
-    left: 182px;
+    top: -390px;
+    left: 730px;
 }
 
 .borderX {
@@ -199,7 +216,7 @@ body {
 }
 .topBarDoubles {
     width: 285px;
-    transform: translateX(95px);
+    transform: translateX(-6695px);
 	text-align: center;
     justify-content: center;
 }
