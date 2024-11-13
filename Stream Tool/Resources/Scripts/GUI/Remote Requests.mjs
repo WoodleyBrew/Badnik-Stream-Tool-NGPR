@@ -59,9 +59,9 @@ async function getData(data) {
         playerFinder.setPlayerPresets();
         commFinder.setCasterPresets();
 
-    } else if (data.message == "toggleWs") {
+    } else if (data.message == "toggleMelee") {
 
-        settings.toggleWs();
+        settings.toggleMelee();
 
     } else if (data.GrandFinals) { // if this is bracket data
 
