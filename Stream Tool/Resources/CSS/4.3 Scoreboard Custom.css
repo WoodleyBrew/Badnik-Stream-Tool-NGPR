@@ -591,10 +591,10 @@ body {
 
 @keyframes wlMoveOut {
     from {transform: translateY(0)}
-    to {transform: translateY(20px)}
+    to {transform: translateY(00px)}
 }
 @keyframes wlMoveIn {
-    from {transform: translateY(20px)}
+    from {transform: translateY(00px)}
     to {transform: translateY(0)}
 }
 

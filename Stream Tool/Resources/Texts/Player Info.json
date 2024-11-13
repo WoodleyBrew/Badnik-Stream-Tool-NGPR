@@ -34,6 +34,23 @@
     ]
   },
   {
+    "name": "Kalvar",
+    "tag": "MATE",
+    "pronouns": "he/they",
+    "state": "",
+    "socials": {
+      "twitter": "",
+      "twitch": "",
+      "yt": ""
+    },
+    "characters": [
+      {
+        "character": "Marth",
+        "skin": "Marth (4)"
+      }
+    ]
+  },
+  {
     "name": "KoE",
     "tag": "",
     "pronouns": "he/him",
