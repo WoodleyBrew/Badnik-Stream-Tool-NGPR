@@ -36,6 +36,14 @@ body {
     filter: drop-shadow(0px 0px 15px black);
 }
 
+#theBackground {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0px;
+    left: 0px;
+}
+
 
 .row {
     display: flex;
