@@ -366,7 +366,7 @@ button:hover {
 
 .selector {
   /* max-width: 145px; */
-  min-width: 100px;
+  min-width: 85px;
   height: 32px;
   color: var(--text1);
   background-color: var(--bg4);
