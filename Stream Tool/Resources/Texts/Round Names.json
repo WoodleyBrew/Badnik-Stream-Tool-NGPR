@@ -52,6 +52,9 @@
         "showNumber": true,
         "forceBestOf": "X"
     },
+	{
+        "name": "Round Robin"
+    },
     {
         "name": "Friendlies"
     },
