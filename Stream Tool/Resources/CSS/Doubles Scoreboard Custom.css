@@ -115,12 +115,12 @@ body {
 
 #p2Wrapper {
 	top: 335px;
-	left: -545px;
+	left: -540px;
 }
 
 #p4Wrapper {
 	top: 507px;
-	left: -545px;
+	left: -540px;
 }
 
 #p1CharaMask {
@@ -194,17 +194,17 @@ body {
 #scoreNumL {
     -webkit-text-stroke: 0px var(--colorL);
     text-shadow: 0px 0px 0px var(--colorL);
-	top: 144px;
+	top: 146px;
 	left: 752px;
 }
 #scoreNumR {
     -webkit-text-stroke: 0px var(--colorR);
     text-shadow: 0px 0px 0px var(--colorR);
-	top: 144px;
-    left: -163px;
+	top: 146px;
+    left: -161px;
 }
 .scoreNumDubs {
-    top: 144px;
+    top: 146px;
 	left: 1000px;
 }
 
@@ -274,7 +274,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    transform: translate(670px, 373px);
+    transform: translate(670px, 374px);
 }
 #roundBorder {
     display: flex;
@@ -623,10 +623,10 @@ body {
 
 @keyframes wlMoveOut {
     from {transform: translateY(0)}
-    to {transform: translateY(20px)}
+    to {transform: translateY(00px)}
 }
 @keyframes wlMoveIn {
-    from {transform: translateY(20px)}
+    from {transform: translateY(00px)}
     to {transform: translateY(0)}
 }
 
