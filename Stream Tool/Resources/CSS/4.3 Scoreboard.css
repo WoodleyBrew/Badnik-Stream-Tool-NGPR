@@ -305,6 +305,25 @@ body {
     background-color: white;
 }
 
+.socialBox {
+    display: flex;
+    text-shadow: 2px 2px 5px black;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    min-height: 28px;
+}
+.socialText {
+    color: rgb(255, 255, 255);
+}
+
+.socialIcon {
+    display: inline-block;
+    object-fit: scale-down;
+    fill: rgb(255, 251, 251);
+    flex-shrink: 0;
+}
+
 .micIcon {
     height: 20px;
     width: 20px;
