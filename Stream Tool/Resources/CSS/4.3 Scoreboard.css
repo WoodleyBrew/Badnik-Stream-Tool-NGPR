@@ -1,27 +1,17 @@
 @font-face {
-    font-family: "Deansgate";
-    src: url('../Fonts/DeansgateCondensed-Bold.ttf');
-}
-
-@font-face {
-    font-family: "Roboto";
-    src: url('../Fonts/Roboto-Bold.ttf');
-}
-
-@font-face {
-    font-family: "Project+";
-    src: url('../Fonts/genuine-865.ttf');
+    font-family: "Gotham Bold";
+    src: url('../Fonts/Gotham-Bold.ttf');
 }
 
 :root {
     --scoreboardX: var(--scoreboardXSingles);
     --scoreboardY: var(--scoreboardYSingles);
-    --scoreboardXSingles: 400px;
+    --scoreboardXSingles: 20px;
     --scoreboardXDoubles: 300px;
-    --scoreboardYSingles: 25px;
+    --scoreboardYSingles: 485px;
     --scoreboardYDoubles: 13px;
-    --colorL: #14bb89;
-    --colorR: #14bb89;
+    --colorL: #FFFFFF;
+    --colorR: #FFFFFF;
 }
 
 body {
@@ -30,22 +20,13 @@ body {
     overflow: hidden;
     padding: 0px;
     margin: 0px;
-    text-transform: uppercase;
+    text-transform: none;
     color: white;
-    font-family: "Deansgate";
+    font-family: "Gotham Bold";
 }
 
 .absol {
     position: absolute;
-}
-
-#theBackground {
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    top: 0px;
-    left: 0px;
-    -webkit-mask-image: url("../Overlay/Scoreboard/4.3/Mask.png");
 }
 
 .scoreboard {
@@ -65,6 +46,8 @@ body {
     -webkit-mask-image: url("../Overlay/Scoreboard/Icon Mask.png");
     width: 401px;
     height: 104px;
+	left: -125px;
+    top: -84px;
 }
 
 .charTop {
@@ -82,8 +65,8 @@ body {
     height: 100px;
     object-fit: scale-down;
     position: absolute;
-    left: 260px;
-    top: 12px;
+    left: 252px;
+    top: 4px;
 }
 
 
@@ -110,11 +93,17 @@ body {
 .flipBack {
     transform: scaleX(-1);
 }
+
+/* Player 1 position */
 #p1Wrapper {
-    left: 38px;
+    left: 32px;
+	top: 29px;
 }
+
+/* Player 2 position */
 #p2Wrapper {
-    right: 79px;
+    right: 30px;
+	top: 29px;
 }
 #p3Wrapper {
     left: 106px;
@@ -130,8 +119,8 @@ body {
 .states {
     position: relative;
     top: 1px;
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 0px;
+    max-height: 0px;
     object-fit: scale-down;
 }
 
@@ -152,89 +141,112 @@ body {
     right: 115px;
 }
 
-
+/* Main score placement; font size lives in Team Score.mjs */
 .scoreNum {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 34px;
-    height: 44px;
-    top: 27px;
-    left: -12px;
-    color: black;
-    font-family: "Deansgate";
+    width: 54px;
+    height: 64px;
+    top: 463px;
+    left: 182px;
+    color: white;
+    font-family: "Gotham Bold";
 }
 #scoreNumL {
-    -webkit-text-stroke: 1px var(--colorL);
-    text-shadow: 0px 0px 2px var(--colorL);
+    -webkit-text-stroke: 0px var(--colorL);
+    text-shadow: 0px 0px 0px var(--colorL);
 }
 #scoreNumR {
-    -webkit-text-stroke: 1px var(--colorR);
-    text-shadow: 0px 0px 2px var(--colorR);
+    -webkit-text-stroke: 0px var(--colorR);
+    text-shadow: 0px 0px 0px var(--colorR);
 }
 .scoreNumDubs {
-    left: 225px;
-    top: 23px;
+    top: 463px;
+    left: 182px;
 }
 
 .borderX {
     transform: translateX(-26px);
 }
 
-
+/* width and height here are pronoun box size */
 .topBarMask {
     overflow: hidden;
     display: flex;
+	text-align: center;
+	justify-content: center;
+    align-items: center;
     width: 380px;
-    height: 25px;
-    transform: translateX(-1px);
+    height: 43px;
+    transform: translate(-23px, -32px);
 }
 .topBarDoubles {
     width: 285px;
     transform: translateX(95px);
+	text-align: center;
     justify-content: center;
 }
-.topBarSinglesNum {
-    transform: translateX(-26px);
-}
+
 
 .topBarTexts {
     display: flex;
-    border-image: url('../Overlay/Scoreboard/WL\ BG.png') 0 7 fill / 0 7px;
-    border-right: 10px solid;
-    border-left: 10px solid;
-    gap: 8px;
-    margin-top: 5px;
+	text-align: center;
+    border-right: 0px solid;
+    border-left: 0px solid;
+    gap: 0px;
+    margin-top: 50px;
+	font-size: 24px
 }
 
+/* Flags needed for pronoun text to be centered */
 .topBarProns {
-    display: none;
-    color: black;
+	display: none;
+    color: white;
+	text-align: center;
+	justify-content: center;
+    align-items: center;
 }
 
+/* locations of left and right pronouns respecitvely */
+.topBarProns1 {
+    display: none;
+    color: white;
+	text-align: center;
+	transform: translate(-84px, -27px);
+}
+
+.topBarProns2 {
+    display: none;
+	text-align: center;
+    color: white;
+	transform: translate(88px, -28px);
+	
+}
+
+/* Main round placement */
 #roundDiv {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    transform: translateY(2px);
+    transform: translate(-805px, 323px);
 }
 #roundBorder {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 14px;
+    padding: 0px 0px;
     border: solid;
-    border-width: 19px 43px;
-    border-image: url('../Overlay/Scoreboard/Round\ BG.png') 19 43 fill;
+    border-width: 0px 0px;
     transition: width .5s;
-    height: 36px;
+    height: 16px;
     min-width: 170px;
     opacity: 0;
 }
 #roundText {
-    font-family: "Roboto";
+    font-family: "Gotham Bold";
     white-space: nowrap;
     font-weight: bolder;
 }
@@ -242,23 +254,23 @@ body {
 #casterInfo {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: left;
     height: 76px;
     transition: width .5s, height .3s, border-width .3s;
 }
 
 #casters {
-    bottom: 5%;
-    left: 89%;
+    bottom: 62.5%;
+    left: 87.7%;
     position: absolute;
-    text-align: center;
+    text-align: left;
     text-shadow: 2px 2px 5px black;
-    font-family: "Deansgate";
+    font-family: "Gotham Bold";
     white-space: nowrap;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    align-items: left;
+    justify-content: left;
+    gap: 0px;
     flex-direction: column;
 }
 
@@ -272,9 +284,9 @@ body {
 
 .casterNameBox {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
+    justify-content: left;
+    align-items: left;
+    gap: 0px;
     min-height: 36px;
 }
 .casterName {
@@ -282,54 +294,39 @@ body {
 }
 .casterTag {
     color: lightgrey;
-    transform: translateY(4px);
+	height: 0px;
+    width: 0px;
+    transform: translateY(0px);
 }
 
 .casterSep {
-    width: 100%;
-    height: 2px;
+    width: 50%;
+    height: 0px;
     background-color: white;
 }
 
-.socialBox {
-    display: flex;
-    text-shadow: 2px 2px 5px black;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    min-height: 28px;
-}
-.socialText {
-    color: rgb(255, 255, 255);
-}
-
-.socialIcon {
-    display: inline-block;
-    object-fit: scale-down;
-    fill: rgb(255, 251, 251);
-    flex-shrink: 0;
-}
 .micIcon {
     height: 20px;
     width: 20px;
+	
 }
 .twitterIcon {
-    height: 18px;
-    width: 18px;
+    height: 0px;
+    width: 0px;
 }
 .twitchIcon {
-    height: 17px;
-    width: 17px;
+    height: 0px;
+    width: 0px;
     transform: translate(-2px, -1px);
 }
 .ytIcon {
-    height: 19px;
-    width: 19px;
+    height: 0px;
+    width: 0px;
     transform: translate(-1px, 0px);
 }
 .personIcon {
-    height: 20px;
-    width: 20px;
+    height: 0px;
+    width: 0px;
 }
 
 .scoreAnimGrad {
@@ -356,34 +353,7 @@ body {
 .scoreAnimMask {
     -webkit-mask-repeat: no-repeat;
 }
-/*
-ok, hear me out
-turns out obs's browser does NOT support just mask-image,
-you NEED to add the webkit prefix, and i have no idea why
-this means i cant add mask-image through javascript style
-because javascript will ALWAYS add mask-image WITHOUT the prefix
-so the only solution i could think of was to have a ccs
-classses for every single possibility
-man i hate chromium
-*/
-.scoreAnimMask15 {
-    -webkit-mask-image: url("../Overlay/Scoreboard/Borders/Border\ 1\ Bo5.png");
-}
-.scoreAnimMask13 {
-    -webkit-mask-image: url("../Overlay/Scoreboard/Borders/Border\ 1\ Bo3.png");
-}
-.scoreAnimMask1X {
-    -webkit-mask-image: url("../Overlay/Scoreboard/Borders/Border\ 1\ BoX.png");
-}
-.scoreAnimMask25 {
-    -webkit-mask-image: url("../Overlay/Scoreboard/Borders/Border\ 2\ Bo5.png");
-}
-.scoreAnimMask23 {
-    -webkit-mask-image: url("../Overlay/Scoreboard/Borders/Border\ 2\ Bo3.png");
-}
-.scoreAnimMask2X {
-    -webkit-mask-image: url("../Overlay/Scoreboard/Borders/Border\ 2\ BoX.png");
-}
+
 
 .scoreAnimDiv {
     display: flex;
@@ -479,7 +449,7 @@ man i hate chromium
 .pIntro {
     width: 500px;
     line-height: 74px;
-    font-family: "Deansgate";
+    font-family: "Gotham Bold";
     white-space: nowrap;
 }
 #p1Intro {
@@ -499,7 +469,7 @@ man i hate chromium
     justify-content: center;
     width: 100%;
     height: 100%;
-    font-family: "Deansgate";
+    font-family: "Gotham Bold";
     font-size: 110px;
     white-space: nowrap;
 }
@@ -523,7 +493,7 @@ man i hate chromium
     align-items: center;
     height: 100%;
     right: 550px;
-    font-family: "Deansgate";
+    font-family: "Gotham Bold";
     font-size: 110px;
     opacity: 0;
 }
@@ -558,9 +528,9 @@ man i hate chromium
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: "Deansgate";
+    font-family: "Gotham Bold";
     font-size: 28px;
-    color: lightcoral;
+    color: white;
     text-shadow: 0px 0px 5px black;
 }
 
@@ -610,10 +580,10 @@ man i hate chromium
 
 @keyframes wlMoveOut {
     from {transform: translateY(0)}
-    to {transform: translateY(20px)}
+    to {transform: translateY(00px)}
 }
 @keyframes wlMoveIn {
-    from {transform: translateY(20px)}
+    from {transform: translateY(00px)}
     to {transform: translateY(0)}
 }
 

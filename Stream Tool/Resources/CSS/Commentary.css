@@ -1,17 +1,6 @@
-/* 
-
-This file, on its own, doesn't do anything. Its here to make it easier for
-users to quickly add a custom set of css propierties while keeping the
-original file intact, should you need to go back to it.
-
-This file will get loaded after the original one, meaning that you can
-override anything you want here.
-
-*/
-
 @font-face {
     font-family: "Gotham Bold";
-    src: url('../Fonts/Gotham Bold.ttf');
+    src: url('../Fonts/Gotham-Bold.ttf');
 }
 
 :root {

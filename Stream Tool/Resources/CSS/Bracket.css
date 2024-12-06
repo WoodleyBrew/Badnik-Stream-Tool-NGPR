@@ -1,16 +1,6 @@
 @font-face {
-    font-family: "RegularText";
-    src: url(../Fonts/DeansgateCondensed-Bold.ttf);
-}
-
-@font-face {
-    font-family: "TagText";
-    src: url(../Fonts/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: "RoundTitle";
-    src: url(../Fonts/DeansgateCondensed-Bold.ttf);
+    font-family: "GothamBold";
+    src: url(../Fonts/Gotham-Bold.ttf);
 }
 
 body {
@@ -20,8 +10,8 @@ body {
     background: transparent;
     padding: 0px;
     margin: 0px;
-    text-transform: uppercase;
-    font-family: "RegularText";
+    text-transform: none;
+    font-family: "GothamBold";
 }
 
 #content {
@@ -33,6 +23,14 @@ body {
     align-items: center;
     gap: 100px;
     filter: drop-shadow(0px 0px 15px black);
+}
+
+#theBackground {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0px;
+    left: 0px;
 }
 
 
@@ -53,10 +51,11 @@ body {
 
 .roundTitle {
     font-size: 44px;
-    font-family: "RoundTitle";
-    color: black;
-    -webkit-text-stroke: 2px white;
+    font-family: "GothamBold";
+    color: white;
+    -webkit-text-stroke: 0px white;
     transform: scaleX(.96);
+	text-shadow: 5px 5px 5px black;
 }
 
 
@@ -114,10 +113,10 @@ body {
     align-items: center;
     font-size: 26px;
     color: black;
-    border-left: 35px solid;
-    border-right: 35px solid;
+    border-left: 25px solid;
+    border-right: 25px solid;
     border-image: url('../Overlay/Bracket/Border\ White.png') 0 35 fill / 0 35px;
-    margin-left: -35px;
+    margin-left: 0px;
     min-width: 18px;
 }
 
@@ -132,7 +131,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: "RegularText";
+    font-family: "GothamBold";
     font-size: 28px;
     color: lightcoral;
     text-shadow: 0px 0px 5px black;

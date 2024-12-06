@@ -1,3 +1,14 @@
+/* 
+
+This file, on its own, doesn't do anything. Its here to make it easier for
+users to quickly add a custom set of css propierties while keeping the
+original file intact, should you need to go back to it.
+
+This file will get loaded after the original one, meaning that you can
+override anything you want here.
+
+*/
+
 
 @font-face {
   font-family: "Roboto-Regular";
@@ -10,20 +21,20 @@
 }
 
 :root {
-  --text1: #00ffd9;
-  --text2: #00ffd9;
-  --bg1: #0a2424;
-  --bg2: #134849;
-  --bg3: #0e3131; 
-  --bg4: #1e887ab2;
-  --bg5: #113f3f;
-  --selected: #2db29f;
-  --focused: #00ffd9;
-  --iconFill: #00ffd9;
+  --text1: #ffffff;
+  --text2: #ffffff;
+  --bg1: #0a1724;
+  --bg2: #132049;
+  --bg3: #0e1d31; 
+  --bg4: #1e4b88;
+  --bg5: #23395d;
+  --selected: #2d53b2;
+  --focused: #00b4ff;
+  --iconFill: #ffffff;
 }
 
 ::placeholder {
-  color: #00a58c;
+  color: #699cbc;
 }
 
 *::-webkit-scrollbar {
@@ -206,9 +217,9 @@ button:hover {
 }
 
 .nameInput {
-  min-width: 60px;
+  min-width: 80px;
   max-width: 210px;
-  width: 60px;
+  width: 80px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
@@ -355,6 +366,7 @@ button:hover {
 
 .selector {
   /* max-width: 145px; */
+  min-width: 85px;
   height: 32px;
   color: var(--text1);
   background-color: var(--bg4);
@@ -365,6 +377,7 @@ button:hover {
   font-size: 14px;
   display: flex;
   align-items: center;
+  text-align: center;
   font-family: 'Roboto-Regular';
   white-space: nowrap;
   gap: 3px;
@@ -384,6 +397,8 @@ button:hover {
 .charSelector {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .charSelectorIcon {
   width: 22px;
@@ -423,7 +438,7 @@ button:hover {
   text-shadow: 0px 0px 3px black;
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 140px;
+  max-height: 240px;
   position: relative;
 }
 
@@ -700,7 +715,7 @@ button:hover {
 
 #casterDiv {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
