@@ -18,6 +18,7 @@ This is a stream tool based on [Readek's](https://github.com/Readek/RoA-Stream-T
 - Swap between Project+ and Melee at the click of a button!
 - [2v2 support](https://raw.githubusercontent.com/Motobug/Badnik-Stream-Tool/master/Git%20Images/2v2.png)!
 - A VS Screen to be displayed when waiting for the next set to begin.
+- A [Commentator Screen](https://raw.githubusercontent.com/Motobug/Badnik-Stream-Tool/master/Git%20Images/Comms.png) to show during player interviews or downtime.
 - A [Bracket View](https://raw.githubusercontent.com/Motobug/Badnik-Stream-Tool/master/Git%20Images/BracketPreview.png) to showcase your tournament's top 8 positions!
 - A [Remote GUI](https://raw.githubusercontent.com/Motobug/Badnik-Stream-Tool/master/Git%20Images/RemoteGUI.png) that can be accessed by any device within the local network, including mobile devices!
 
