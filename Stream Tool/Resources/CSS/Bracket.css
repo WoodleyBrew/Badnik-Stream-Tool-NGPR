@@ -25,6 +25,7 @@ body {
     filter: drop-shadow(0px 0px 15px black);
 }
 
+/* background video is loaded from the html file */
 #theBackground {
     position: absolute;
     width: 1920px;
@@ -133,7 +134,7 @@ body {
     text-align: center;
     font-family: "GothamBold";
     font-size: 28px;
-    color: lightcoral;
+    color: white;
     text-shadow: 0px 0px 5px black;
 }
 

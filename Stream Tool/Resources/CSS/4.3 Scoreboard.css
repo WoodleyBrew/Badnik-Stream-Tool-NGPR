@@ -14,6 +14,9 @@
     --colorR: #FFFFFF;
 }
 
+/* Note that any doubles functions are not used in this file; use the Doubles Scoreboard for that purpose! */
+
+
 body {
     width: 1920px;
     height: 1080px;
@@ -41,6 +44,7 @@ body {
 }
 
 
+/* size and position of the character render onscreen */
 .mask {
     position: absolute;
     -webkit-mask-image: url("../Overlay/Scoreboard/Icon Mask.png");
@@ -49,6 +53,7 @@ body {
 	left: -125px;
     top: -84px;
 }
+
 
 .charTop {
     top: 0px;
@@ -60,6 +65,7 @@ body {
     left: -285px;
 }
 
+/* size and position of the character image itself inside the mask */
 .pCharacter {
     width: 100px;
     height: 100px;
@@ -76,6 +82,8 @@ body {
     opacity: 0;
     white-space: nowrap;
 }
+
+/* Container for all text elements for players; editing each element independently instead is recommended */
 .wrappersSingles {
     width: 205px;
     height: 36px;   
@@ -84,12 +92,13 @@ body {
 }
 
 .wrappersDubs {
-    width: 123px;
-    height: 30px;
-    line-height: 30px;
-    top: 32px;
+    width: 205px;
+    height: 36px;   
+    top: 34px;
+    line-height: 32px;
 }
 
+/* Mirrors renders to face the center of the screen if needed */
 .flipBack {
     transform: scaleX(-1);
 }
@@ -116,6 +125,7 @@ body {
     color: lightgray;
 }
 
+/* Unused function for displaying state flags */
 .states {
     position: relative;
     top: 1px;
@@ -153,6 +163,8 @@ body {
     color: white;
     font-family: "Gotham Bold";
 }
+
+/* Position of the left and right score respectively */
 #scoreNumL {
     -webkit-text-stroke: 0px var(--colorL);
     text-shadow: 0px 0px 0px var(--colorL);
@@ -188,7 +200,7 @@ body {
     justify-content: center;
 }
 
-
+/* Font size and other flags for pronouns */
 .topBarTexts {
     display: flex;
 	text-align: center;
@@ -259,8 +271,9 @@ body {
     transition: width .5s, height .3s, border-width .3s;
 }
 
+/* Position of the caster object onscreen */
 #casters {
-    bottom: 62.5%;
+    bottom: 62.2%;
     left: 87.7%;
     position: absolute;
     text-align: left;
@@ -289,6 +302,8 @@ body {
     gap: 0px;
     min-height: 36px;
 }
+
+/* Color of caster names */
 .casterName {
     color: white;
 }
@@ -299,19 +314,21 @@ body {
     transform: translateY(0px);
 }
 
+/* Unused caster division object */
 .casterSep {
     width: 50%;
     height: 0px;
     background-color: white;
 }
 
+/* Last flag */
 .socialBox {
     display: flex;
     text-shadow: 2px 2px 5px black;
     justify-content: center;
     align-items: center;
     gap: 2px;
-    min-height: 28px;
+    min-height: 27px;
 }
 .socialText {
     color: rgb(255, 255, 255);
@@ -324,9 +341,10 @@ body {
     flex-shrink: 0;
 }
 
+/* Size of the mic icon next to the caster names*/
 .micIcon {
-    height: 20px;
-    width: 20px;
+	height: 25px;
+    width: 25px;
 	
 }
 .twitterIcon {
@@ -348,65 +366,7 @@ body {
     width: 0px;
 }
 
-.scoreAnimGrad {
-    position: absolute;
-    width: 80px;
-    height: 34px;
-    opacity: 0;
-}
-.scoreAnimGrad1 {
-    transform: translate(27px, 30px) skewX(15deg);
-    height: 40px;
-}
-.scoreAnimGrad2 {
-    transform: translate(110px, 66px) skewX(15deg);
-    height: 34px;
-}
-#scoreAnimGradL {
-    background: linear-gradient(90deg, var(--colorL) 0%, #FFFFFF00);
-}
-#scoreAnimGradR {
-    background: linear-gradient(90deg, var(--colorR) 0%, #FFFFFF00);
-}
-
-.scoreAnimMask {
-    -webkit-mask-repeat: no-repeat;
-}
-
-
-.scoreAnimDiv {
-    display: flex;
-    justify-content: center;
-    transform: translateX(-100%);
-}
-
-.scoreAnimMove {
-    height: 150px;
-    width: 150px;
-    opacity: .8;
-}
-#scoreAnimMoveL{
-    background: linear-gradient(
-        90deg,
-        #FFFFFF00 0%,
-        var(--colorL) 50%,
-        #FFFFFF00
-    );
-}
-#scoreAnimMoveR {
-    background: linear-gradient(
-        90deg,
-        #FFFFFF00 0%,
-        var(--colorR) 50%,
-        #FFFFFF00
-    );
-}
-
-.scoreAnimImgForWidth {
-    opacity: 0;
-}
-
-
+/* Various settings for when "Allow Intro" is checked in the tool*/
 #overlayIntro {
     opacity: 0;
     position: absolute;

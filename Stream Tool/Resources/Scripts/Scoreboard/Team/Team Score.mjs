@@ -85,7 +85,7 @@ export class TeamScore {
     updateImg(gm, bo, score) {
 
         // if using numerical Best Of, just dont bother
-        this.#scoreImg.src = `Resources/Overlay/Scoreboard/Score/${gm}/Bo${bo} ${score}.png`;
+        this.#scoreImg.src = `Resources/Overlay/Scoreboard/BlankImage.png`;
 
     }
 
@@ -97,8 +97,8 @@ export class TeamScore {
     updateBo(bo, gm) {
 
         // update the border images
-        this.#borderImg.src = `Resources/Overlay/Scoreboard/Borders/Border ${gm} Bo${bo}.png`;
-        this.#animImg.src = `Resources/Overlay/Scoreboard/Borders/Border ${gm} Bo${bo}.png`;
+        this.#borderImg.src = `Resources/Overlay/Scoreboard/BlankImage.png`;
+        this.#animImg.src = `Resources/Overlay/Scoreboard/BlankImage.png`;
 
         // theres a comment about this mess on the css file
         this.removeMaskClass();

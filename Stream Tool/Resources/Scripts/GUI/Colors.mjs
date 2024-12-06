@@ -10,9 +10,9 @@ const colorGradients = document.getElementsByClassName("side");
 
 // store scoreboard color images to be used later
 const scColor1 = new Image();
-scColor1.src = stPath.overlay + "/Scoreboard/Color 1.png";
+scColor1.src = stPath.overlay + "/Scoreboard/BlankImage.png";
 const scColor2 = new Image();
-scColor2.src = stPath.overlay + "/Scoreboard/Color 2.png";
+scColor2.src = stPath.overlay + "/Scoreboard/BlankImage.png";
 
 // load the color list from a json file
 const colorList = await getJson(stPath.text + "/Color Slots");

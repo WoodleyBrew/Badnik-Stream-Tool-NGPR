@@ -40,7 +40,7 @@ body {
     transform: scaleX(-1);
 }
 
-
+/* size and position of the character render onscreen */
 .mask {
     position: absolute;
     -webkit-mask-image: url("../Overlay/Scoreboard/Icon Mask.png");
@@ -60,6 +60,7 @@ body {
     left: -285px;
 }
 
+/* size and position of the character image itself inside the mask */
 .pCharacter {
     width: 100px;
     height: 100px;
@@ -120,9 +121,13 @@ body {
 	text-align: right;
 	text-shadow: 2px 2px 2px black;
 }
+
+/* moved offscreen */
 #p3Wrapper {
     left: 1106px;
 }
+
+/* moved offscreen */
 #p4Wrapper {
     right: 1106px;
 }
@@ -131,6 +136,7 @@ body {
     color: lightgray;
 }
 
+/* Unused function for displaying state flags */
 .states {
     position: relative;
     top: 1px;
@@ -174,6 +180,8 @@ body {
     color: white;
     font-family: "Gotham Bold";
 }
+
+/* Position of the left and right score respectively */
 #scoreNumL {
     -webkit-text-stroke: 0px var(--colorL);
     text-shadow: 3px 3px 3px black;
@@ -210,7 +218,7 @@ body {
     justify-content: center;
 }
 
-
+/* Font size and other flags for pronouns */
 .topBarTexts {
     display: flex;
 	text-align: center;
@@ -282,6 +290,7 @@ body {
     transition: width .5s, height .3s, border-width .3s;
 }
 
+/* Position of the caster object onscreen */
 #casters {
     bottom: 5.4%;
     left: 25.8%;
@@ -313,6 +322,8 @@ body {
     gap: 6px;
     min-height: 36px;
 }
+
+/* Color of caster names */
 .casterName {
     color: white;
 }
@@ -322,12 +333,14 @@ body {
 	
 }
 
+/* Unused caster division object */
 .casterSep {
     width: 100%;
     height: 0px;
     background-color: white;
 }
 
+/* Last flag is distance between caster and their pronoun box */
 .socialBox {
 	position: flex;
     display: flex;
@@ -356,6 +369,8 @@ body {
     fill: rgb(255, 251, 251);
     flex-shrink: 0;
 }
+
+/* Size of the mic icon next to the caster names*/
 .micIcon {
     height: 40px;
     width: 40px;
@@ -380,66 +395,7 @@ body {
     width: 0px;
 }
 
-
-.scoreAnimGrad {
-    position: absolute;
-    width: 80px;
-    height: 34px;
-    opacity: 0;
-}
-.scoreAnimGrad1 {
-    transform: translate(27px, 30px) skewX(15deg);
-    height: 40px;
-}
-.scoreAnimGrad2 {
-    transform: translate(110px, 66px) skewX(15deg);
-    height: 34px;
-}
-#scoreAnimGradL {
-    background: linear-gradient(90deg, var(--colorL) 0%, #FFFFFF00);
-}
-#scoreAnimGradR {
-    background: linear-gradient(90deg, var(--colorR) 0%, #FFFFFF00);
-}
-
-.scoreAnimMask {
-    -webkit-mask-repeat: no-repeat;
-}
-
-
-.scoreAnimDiv {
-    display: flex;
-    justify-content: center;
-    transform: translateX(-100%);
-}
-
-.scoreAnimMove {
-    height: 150px;
-    width: 150px;
-    opacity: .8;
-}
-#scoreAnimMoveL{
-    background: linear-gradient(
-        90deg,
-        #FFFFFF00 0%,
-        var(--colorL) 50%,
-        #FFFFFF00
-    );
-}
-#scoreAnimMoveR {
-    background: linear-gradient(
-        90deg,
-        #FFFFFF00 0%,
-        var(--colorR) 50%,
-        #FFFFFF00
-    );
-}
-
-.scoreAnimImgForWidth {
-    opacity: 0;
-}
-
-
+/* Various settings for when "Allow Intro" is checked in the tool*/
 #overlayIntro {
     opacity: 0;
     position: absolute;

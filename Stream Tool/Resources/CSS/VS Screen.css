@@ -25,6 +25,7 @@ body {
     position: absolute;
 }
 
+/* function to mirror the opposing player's render */
 .mirror {
     position: absolute;
     transform: scaleX(-1);
@@ -55,10 +56,11 @@ body {
     right: 0px;
 }
 
-
+/* desaturates background slightly */
 #bgVids {
     filter: grayscale(.4);
 }
+
 
 #vidBGP1 {
     clip: rect(0px, 960px, 1080px, 0px);

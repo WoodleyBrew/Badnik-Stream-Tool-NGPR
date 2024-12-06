@@ -20,6 +20,7 @@ override anything you want here.
   src: url('../Fonts/Roboto-Medium.ttf');
 }
 
+/* color values referenced for various UI elements */
 :root {
   --text1: #ffffff;
   --text2: #ffffff;
