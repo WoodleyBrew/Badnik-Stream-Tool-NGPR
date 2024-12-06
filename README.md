@@ -21,6 +21,7 @@ This is a stream tool based on [Readek's](https://github.com/Readek/RoA-Stream-T
 - A [Commentator Screen](https://raw.githubusercontent.com/Motobug/Badnik-Stream-Tool/master/Git%20Images/Comms.png) to show during player interviews or downtime.
 - A [Bracket View](https://raw.githubusercontent.com/Motobug/Badnik-Stream-Tool/master/Git%20Images/BracketPreview.png) to showcase your tournament's top 8 positions!
 - A [Remote GUI](https://raw.githubusercontent.com/Motobug/Badnik-Stream-Tool/master/Git%20Images/RemoteGUI.png) that can be accessed by any device within the local network, including mobile devices!
+- Support for both Windows and Linux devices!
 
 ---
 
@@ -31,7 +32,7 @@ These are instructions for **OBS Studio**:
 - Drag and drop `Singles Scoreboard.html` into OBS, or add a new browser source in OBS pointing at the local file.
   - If the source looks weird, manually set the source's properties to 1920 width and 1080 height, or set your OBS canvas resolution to 1080p, or make the source fit the screen (Ctrl+F).
 - In the source's properties, change *Use custom frame rate* -> `60` (if streaming at 60fps of course).
-- Manage it all with the `Badnik Stream Tool v1.0.0` executable (or Badnik Stream Tool v1.0.0.AppImage in you are on Linux).
+- Manage it all with the `Badnik Stream Tool v1.0.0` executable (or Badnik Stream Tool v1.0.0.AppImage if you are on Linux).
 
 Repeat from the 3rd step to add the `VS Screen.html`, `Commentator Screen.html`, and `Bracket.html` views, though it is recommend you to do so on another scene.
 
