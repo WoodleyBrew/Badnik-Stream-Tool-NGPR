@@ -99,6 +99,7 @@ export async function writeScoreboard() {
             sc : {
                 charImg: players[i].scBrowserSrc || players[i].scSrc,
                 charPos: players[i].getScCharPos(),
+                olImg: players[i].scOlSrc,
             },
             vs : {
                 charImg: players[i].vsBrowserSrc || players[i].vsSrc,
