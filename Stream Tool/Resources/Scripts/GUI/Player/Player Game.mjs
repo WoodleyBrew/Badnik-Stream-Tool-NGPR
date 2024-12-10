@@ -223,9 +223,9 @@ export class PlayerGame extends Player {
     async setScOl() {
 		
             if (settings.isMeleeChecked()) {
-                this.scOlSrc = `Resources/Overlay/Scoreboard_Melee.png`;
+                this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard_Melee.png`;
             } else {
-                this.scOlSrc = `Resources/Overlay/Scoreboard.png`;
+                this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard.png`;
             }
 
     }
