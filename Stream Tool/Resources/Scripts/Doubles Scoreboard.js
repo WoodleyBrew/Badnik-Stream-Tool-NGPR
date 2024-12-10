@@ -48,7 +48,7 @@ async function updateData(data) {
 	if (data.allowIntro) {
 		current.delay = introDelaySc + 2;
 	} else {
-		current.delay = introDelaySc;
+		current.delay = introDelaySc - 3;
 	}
 
 	// if this isnt a singles match, rearrange stuff

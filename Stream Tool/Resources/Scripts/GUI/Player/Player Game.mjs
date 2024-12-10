@@ -223,10 +223,17 @@ export class PlayerGame extends Player {
     async setScOl() {
 		
             if (settings.isMeleeChecked()) {
-                this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard_Melee.png`;
+                if (gamemode.getGm() == 2) {
+                    this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard_Doubles_Melee.png`;
+                } else 
+                    this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard_Melee.png`;
+                    
             } else {
-                this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard.png`;
-            }
+                if (gamemode.getGm() == 2) {
+                    this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard_Doubles.png`;
+                } else 
+                    this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard.png`;
+                }
 
     }
 
