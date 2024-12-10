@@ -93,12 +93,8 @@ export class PlayerCharacter {
         // if the path isnt the same
         if (this.#olSrc != olSrc) {
 
-           
-
             // update it
             this.#olEl.src = olSrc;
-
-           
 
             // remember, remember
             this.#olSrc = olSrc;

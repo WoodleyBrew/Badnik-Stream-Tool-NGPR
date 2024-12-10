@@ -222,13 +222,13 @@ export class PlayerGame extends Player {
     /** Sets the scoreboard's overlay src */
     async setScOl() {
 		
-            if (settings.isMeleeChecked()) {
-                if (gamemode.getGm() == 2) {
-                    this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard_Doubles_Melee.png`;
+            if (settings.isMeleeChecked()) { //if Melee mode is on
+                if (gamemode.getGm() == 2) { //and if Doubles is active
+                    this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard_Doubles_Melee.png`; //use Doubles scoreboard
                 } else 
-                    this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard_Melee.png`;
+                    this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard_Melee.png`; //otherwise, use Singles scoreboard
                     
-            } else {
+            } else { // otherwise, use P+ scoreboards
                 if (gamemode.getGm() == 2) {
                     this.scOlSrc = `Resources/Overlay/Scoreboard/Scoreboard_Doubles.png`;
                 } else 
