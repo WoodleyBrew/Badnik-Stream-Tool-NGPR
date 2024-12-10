@@ -1,5 +1,5 @@
-import { fadeInMove } from "../../Utils/Fade In.mjs";
-import { fadeOutMove } from "../../Utils/Fade Out.mjs";
+import { fadeInMove, charaFadeIn, fadeIn } from "../../Utils/Fade In.mjs";
+import { fadeOutMove, charaFadeOut, fadeOut } from "../../Utils/Fade Out.mjs";
 import { current } from "../../Utils/Globals.mjs";
 import { fadeInTimeSc, fadeOutTimeSc, introDelaySc } from "../ScGlobals.mjs";
 
@@ -93,19 +93,12 @@ export class PlayerCharacter {
         // if the path isnt the same
         if (this.#olSrc != olSrc) {
 
-            // if not loading everything up
-            if (!current.startup) {
-                // fade out the background
-                await fadeOut(this.#olEl, fadeOutTimeSc+.2);
-            }
+           
 
             // update it
             this.#olEl.src = olSrc;
 
-            // and show it!
-            if (!current.startup) {
-                fadeIn(this.#olEl, fadeInTimeSc, .3);
-            }
+           
 
             // remember, remember
             this.#olSrc = olSrc;
