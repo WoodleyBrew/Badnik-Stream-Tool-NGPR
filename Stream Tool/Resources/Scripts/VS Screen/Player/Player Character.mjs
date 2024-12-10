@@ -7,25 +7,25 @@ export class PlayerCharacter {
 
     #charSrc = "";
     #trailSrc = "";
-    #bgSrc = "";
+    #olSrc = "";
 
     #charEl;
     #trailEl;
     #charDiv;
-    #bgEl;
+    #olEl;
 
     /**
      * Controls the player's character, trail and bg video
      * @param {HTMLElement} charEl - Elemeent containing character image
      * @param {HTMLElement} trailEl - Element containing trail image
-     * @param {HTMLElement} bgEl - Element containing background video
+     * @param {HTMLElement} olEl - Element containing background video
      * @param {Number} id - Player slot
      */
-    constructor(charEl, trailEl, bgEl) {
+    constructor(charEl, trailEl, olEl) {
 
         this.#charEl = charEl;
         this.#trailEl = trailEl;
-        this.#bgEl = bgEl;
+        this.#olEl = olEl;
 
         // to animate both char and trail at once
         this.#charDiv = charEl.parentElement;
@@ -40,7 +40,7 @@ export class PlayerCharacter {
     update(vsData) {
 
         // update that background
-        this.#updateBg(vsData.bgVid);
+        this.#updateBg(vsData.olImg);
 
         // update that character
         return this.#updateChar(vsData);
@@ -113,29 +113,29 @@ export class PlayerCharacter {
 
     /**
      * Updates the character's background video
-     * @param {String} bgSrc - Background source path
+     * @param {String} olSrc - Background source path
      */
-    async #updateBg(bgSrc) {
+    async #updateBg(olSrc) {
 
         // if the path isnt the same
-        if (this.#bgSrc != bgSrc) {
+        if (this.#olSrc != olSrc) {
 
             // if not loading everything up
             if (!current.startup) {
                 // fade out the background
-                await fadeOut(this.#bgEl, fadeOutTimeVs+.2);
+                await fadeOut(this.#olEl, fadeOutTimeVs+.2);
             }
 
             // update it
-            this.#bgEl.src = bgSrc;
+            this.#olEl.src = olSrc;
 
             // and show it!
             if (!current.startup) {
-                fadeIn(this.#bgEl, fadeInTimeVs, .3);
+                fadeIn(this.#olEl, fadeInTimeVs, .3);
             }
 
             // remember, remember
-            this.#bgSrc = bgSrc;
+            this.#olSrc = olSrc;
 
         }
 
@@ -160,15 +160,15 @@ export class PlayerCharacter {
     /** Hides the character's images */
     hide() {
         this.#charDiv.style.display = "none";
-        this.#bgEl.style.display = "none";
-        this.#bgEl.style.animation = "";
+        this.#olEl.style.display = "none";
+        this.#olEl.style.animation = "";
     }
 
     /** Displays hidden images, fading them in */
     show() {
         charaFadeIn(this.#charDiv, this.#trailEl, fadeInTimeVs, introDelayVs);
         this.#charDiv.style.display = "block";
-        this.#bgEl.style.display = "block";
+        this.#olEl.style.display = "block";
     }
 
 }

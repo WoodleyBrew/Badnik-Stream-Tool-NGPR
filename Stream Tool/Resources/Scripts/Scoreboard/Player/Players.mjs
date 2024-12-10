@@ -7,7 +7,7 @@ class Players {
     #players = [];
 
     constructor() {
-
+        
         // add new players to our array, max 4 players for 2v2
         for (let i = 0; i < 4; i++) {
 
@@ -15,10 +15,11 @@ class Players {
             const wrapEl = document.getElementById(`p${i+1}Wrapper`);
             const pronEl = document.getElementById(`p${i+1}Pronouns`);
             const charEl = document.getElementById(`p${i+1}Character`);
+            const pOlEls = document.getElementsByClassName("olImg");
 
             // and create them
             this.#players.push(
-                new Player(wrapEl, pronEl, charEl, i+1)
+                new Player(wrapEl, pronEl, charEl, pOlEls[i], i+1)
             );
 
         }

@@ -13,9 +13,10 @@ export class Player {
      * @param {HTMLElement} wrapEl - Wrapper containing name and tag + state
      * @param {HTMLElement} pronEl - Element containing player pronouns
      * @param {HTMLElement} charEl - Element containing character image
+     * @param {HTMLElement} olEl - Element containing overlay image
      * @param {Number} id - Player slot
      */
-    constructor(wrapEl, pronEl, charEl, id) {
+    constructor(wrapEl, pronEl, charEl, olEl, id) {
 
         // player name and tag and state
         const nameEl = wrapEl.getElementsByClassName("names")[0];
@@ -27,7 +28,7 @@ export class Player {
         this.#pProns = new PlayerInfo(pronEl, id);
 
         // player character
-        this.#pChar = new PlayerCharacter(charEl);
+        this.#pChar = new PlayerCharacter(charEl, olEl);
 
     }
 

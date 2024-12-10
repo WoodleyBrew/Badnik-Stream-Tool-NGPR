@@ -23,6 +23,7 @@ export class PlayerGame extends Player {
     vsSrc;
     vsBrowserSrc;
     vsBgSrc;
+    scOlSrc;
 
     pInfoDiv;
     cInfoDiv;
@@ -117,6 +118,7 @@ export class PlayerGame extends Player {
         await this.setVsImg();
         // update the VS BG based on the vs img
         await this.setVsBg();
+        await this.setScOl();
         // set up a trail for the vs screen
         await this.setTrailImage();
 
@@ -213,6 +215,17 @@ export class PlayerGame extends Player {
                 this.vsBgSrc = `Resources/Characters/_Melee/BG.webm`;
             } else {
                 this.vsBgSrc = `Resources/Characters/BG.webm`;
+            }
+
+    }
+    
+    /** Sets the scoreboard's overlay src */
+    async setScOl() {
+		
+            if (settings.isMeleeChecked()) {
+                this.scOlSrc = `Resources/Overlay/Scoreboard_Melee.png`;
+            } else {
+                this.scOlSrc = `Resources/Overlay/Scoreboard.png`;
             }
 
     }

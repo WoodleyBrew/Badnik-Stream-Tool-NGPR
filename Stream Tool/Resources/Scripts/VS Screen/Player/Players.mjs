@@ -12,17 +12,17 @@ class Players {
 
         const pInfoEls = document.getElementsByClassName("pInfo");
         const pCharEls = document.getElementsByClassName("chara");
-        const pBgEls = document.getElementsByClassName("bgVid");
 
         // add new players to our array, max 4 players for 2v2
         for (let i = 0; i < 4; i++) {
 
             // gather the data needed for our classes
             const wrapEl = document.getElementById(`p${i+1}Wrapper`);
+            const pOlEls = document.getElementsByClassName("olImg");
 
             // and create them
             this.#players.push(
-                new Player(wrapEl, pInfoEls[i], pCharEls[i], pBgEls[i], i+1)
+                new Player(wrapEl, pInfoEls[i], pCharEls[i], pOlEls[i], i+1)
             );
 
         }
