@@ -125,8 +125,8 @@ class Round {
                 this.hideNumberInput();
             }
     
-            // of course, check for grands
-            this.checkGrands();
+            // of course, check for grands (disabled)
+            //this.checkGrands();
 
         }
 
@@ -167,16 +167,16 @@ class Round {
         }        
     }
 
-    /** Checks if the round text contains "Grands" so it shows/hides W/L buttons */
-    checkGrands() {
-        if (!settings.isForceWLChecked()) {
-            if (this.getText().toLocaleUpperCase().includes("Grand".toLocaleUpperCase())) {
-                wl.show();
-            } else {
-                wl.hide();
-            }
-        }
-    }
+    /** Checks if the round text contains "Grands" so it shows/hides W/L buttons */ //disabled
+    //checkGrands() {
+    //    if (!settings.isForceWLChecked()) {
+    //        if (this.getText().toLocaleUpperCase().includes("Grand".toLocaleUpperCase())) {
+    //            wl.show();
+    //        } else {
+    //            wl.hide();
+    //        }
+    //    }
+    //}
 
 }
 

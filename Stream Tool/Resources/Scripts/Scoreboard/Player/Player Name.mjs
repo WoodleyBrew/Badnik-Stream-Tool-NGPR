@@ -5,7 +5,7 @@ import { resizeText } from "../../Utils/Resize Text.mjs";
 import { gamemode } from "../Gamemode Change.mjs";
 import { fadeInTimeSc, fadeOutTimeSc } from "../ScGlobals.mjs";
 
-const playerSize = 30;
+const playerSize = 42;
 const tagSize = 22;
 const playerSizeDubs = 30;
 const tagSizeDubs = 22;

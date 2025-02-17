@@ -1,0 +1,595 @@
+@font-face {
+    font-family: "Passenger Sans";
+    src: url('../Fonts/Passenger-Sans.otf');
+}
+
+@font-face {
+    font-family: "Inter Thin"
+    src: url('../Fonts/Inter-Thin.ttf');
+}
+
+@font-face {
+    font-family: "Gotham Bold"
+    src: url('../Fonts/Gotham-Bold.ttf');
+}
+
+:root {
+    --scoreboardX: var(--scoreboardXSingles);
+    --scoreboardY: var(--scoreboardYSingles);
+    --scoreboardXSingles: 20px;
+    --scoreboardXDoubles: 300px;
+    --scoreboardYSingles: 485px;
+    --scoreboardYDoubles: 13px;
+    --colorL: #FFFFFF;
+    --colorR: #FFFFFF;
+}
+
+/* Note that any doubles functions are not used in this file; use the Doubles Scoreboard for that purpose! */
+
+
+body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    text-transform: none;
+    color: white;
+    font-family: "Passenger Sans";
+}
+
+.absol {
+    position: absolute;
+}
+
+.scoreboard {
+    top: var(--scoreboardY);
+}
+#scoreboardL {
+    left: var(--scoreboardX);
+}
+#scoreboardR {
+    right: var(--scoreboardX);
+    transform: scaleX(-1);
+}
+
+
+/* size and position of the character render onscreen */
+.mask {
+    position: absolute;
+    -webkit-mask-image: url("../Overlay/Scoreboard/Icon Mask.png");
+    width: 401px;
+    height: 104px;
+	left: 290px;
+    top: 490px;
+}
+
+
+.charTop {
+    top: 0px;
+    left: 95px;
+}
+
+.charBot {
+    top: 25px;
+    left: -285px;
+}
+
+/* size and position of the character image itself inside the mask */
+.pCharacter {
+    width: 17px;
+    height: 17px;
+    object-fit: scale-down;
+    position: absolute;
+    left: 300px;
+    top: -3px;
+}
+
+
+.wrappers {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+/* Container for all text elements for players; editing each element independently instead is recommended */
+.wrappersSingles {
+    width: 205px;
+    height: 36px;   
+    top: 34px;
+    line-height: 32px;
+}
+
+.wrappersDubs {
+    width: 205px;
+    height: 36px;   
+    top: 34px;
+    line-height: 32px;
+}
+
+/* Mirrors renders to face the center of the screen if needed */
+.flipBack {
+    transform: scaleX(-1);
+}
+
+/* Player 1 position */
+#p1Wrapper {
+    left: 225px;
+	top: 529px;
+}
+
+/* Player 2 position */
+#p2Wrapper {
+    right: 225px;
+	top: 529px;
+}
+#p3Wrapper {
+    left: 106px;
+}
+#p4Wrapper {
+    right: 106px;
+}
+
+.tags {
+    color: lightgray;
+}
+
+/* Unused function for displaying state flags */
+.states {
+    position: relative;
+    top: 1px;
+    max-width: 0px;
+    max-height: 0px;
+    object-fit: scale-down;
+}
+
+.teamName {
+    position: absolute;
+    width: 275px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    top: 67px;
+    opacity: 0;
+    white-space: nowrap;
+}
+#teamNameL {
+    left: 115px;
+}
+#teamNameR {
+    right: 115px;
+}
+
+/* Main score placement; font size lives in Team Score.mjs */
+.scoreNum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 64px;
+    top: -447px;
+    left: 855px;
+    color: white;
+    font-family: "Passenger Sans";
+}
+
+/* Position of the left and right score respectively */
+#scoreNumL {
+    -webkit-text-stroke: 3px var(--colorL);
+    text-shadow: 0px 0px 0px var(--colorL);
+}
+#scoreNumR {
+    -webkit-text-stroke: 3px var(--colorR);
+    text-shadow: 2px 2px 2px var(--colorR);
+}
+.scoreNumDubs {
+    top: 463px;
+    left: 182px;
+}
+
+.borderX {
+    transform: translateX(-26px);
+}
+
+/* width and height here are pronoun box size */
+.topBarMask {
+    overflow: show;
+    display: flex;
+    width: 380px;
+    height: 43px;
+    transform: translate(-23px, -32px);
+}
+.topBarDoubles {
+    width: 285px;
+    transform: translateX(95px);
+	text-align: center;
+    justify-content: center;
+}
+
+/* Font size and other flags for pronouns */
+.topBarTexts {
+    display: flex;
+	font-family: "Inter Thin";
+	text-align: center;
+    border-right: 0px solid;
+    border-left: 0px solid;
+    gap: 0px;
+    margin-top: 50px;
+	font-size: 0px;
+	font-weight: regular;
+}
+
+/* Flags needed for pronoun text to be centered */
+.topBarProns {
+	display: none;
+    color: white;
+}
+
+/* locations of left and right pronouns respecitvely */
+.topBarProns1 {
+    display: none;
+    color: white;
+	text-align: left;
+	transform: translate(24px, 382px);
+}
+
+.topBarProns2 {
+    display: none;
+	text-align: right;
+    color: white;
+	transform: translate(-20px, 382px);
+	
+}
+
+/* Main round placement */
+#roundDiv {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: translate(-8810px, 290px);
+}
+#roundBorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    border: solid;
+    border-width: 0px 0px;
+    transition: width .5s;
+    height: 16px;
+    min-width: 170px;
+    opacity: 0;
+}
+#roundText {
+    font-family: "Inter Thin";
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+#casterInfo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    height: 76px;
+    transition: width .5s, height .3s, border-width .3s;
+}
+
+/* Position of the caster object onscreen */
+#casters {
+    bottom: -111.0%;
+    left: 87.7%;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+    font-family: "Inter Thin";
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    flex-direction: column;
+}
+
+.casterDiv {
+    display: flex;
+    flex-direction: column;
+    width: 185px;
+    margin: 0 0px;
+    flex-shrink: 0;
+}
+
+.casterNameBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    min-height: 0px;
+}
+
+/* Color of caster names */
+.casterName {
+    color: white;
+}
+.casterTag {
+    color: lightgrey;
+	height: 0px;
+    width: 0px;
+    transform: translateY(0px);
+}
+
+/* Unused caster division object */
+.casterSep {
+    width: 50%;
+    height: 0px;
+    background-color: white;
+}
+
+/* Last flag */
+.socialBox {
+    display: flex;
+    text-shadow: 2px 2px 5px black;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    min-height: 27px;
+}
+.socialText {
+    color: rgb(255, 255, 255);
+}
+
+.socialIcon {
+    display: inline-block;
+    object-fit: scale-down;
+    fill: rgb(255, 251, 251);
+    flex-shrink: 0;
+}
+
+/* Size of the mic icon next to the caster names*/
+.micIcon {
+	height: 0px;
+    width: 0px;
+	
+}
+.twitterIcon {
+    height: 0px;
+    width: 0px;
+}
+.twitchIcon {
+    height: 0px;
+    width: 0px;
+    transform: translate(-2px, -1px);
+}
+.ytIcon {
+    height: 0px;
+    width: 0px;
+    transform: translate(-1px, 0px);
+}
+.personIcon {
+    height: 0px;
+    width: 0px;
+}
+
+/* Various settings for when "Allow Intro" is checked in the tool*/
+#overlayIntro {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#introBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+.blackBar {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+}
+#introTopBar {
+    height: 100px;
+}
+#introBotBar {
+    height: 100px;
+    bottom: 0px;
+}
+
+#introWhiteBars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#introWhiteBarsClip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+    width: 960px;
+    overflow: hidden;
+}
+.introWhiteBar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+
+#playersIntro {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 200px;
+}
+.pIntro {
+    width: 500px;
+    line-height: 74px;
+    font-family: "Gotham Bold";
+    white-space: nowrap;
+}
+#p1Intro {
+    text-align: right;
+    text-shadow: 0px 0px 20px var(--colorL);
+}
+
+#p2Intro {
+    text-shadow: 0px 0px 20px var(--colorR);
+}
+
+
+#midTextIntro {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Gotham Bold";
+    font-size: 110px;
+    white-space: nowrap;
+}
+
+#rtIntro {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    gap: 170px;
+    font-size: 48px;
+    white-space: nowrap;
+}
+
+#superCoolInterrogation {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    right: 550px;
+    font-family: "Gotham Bold";
+    font-size: 110px;
+    opacity: 0;
+}
+
+
+.dubEL {
+    display: none;
+}
+
+
+.tLogos {
+    max-width: 36px;
+    max-height: 36px;
+    top: 33px;
+    object-fit: scale-down;
+}
+#tagLogoP1 {
+    left: 248px;
+}
+#tagLogoP2 {
+    right: 38px;
+}
+
+
+#connErrorDiv {
+    display: none;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Gotham Bold";
+    font-size: 28px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+
+/* Animations! */
+
+
+@keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: 0}
+}
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+@keyframes moveOutLeft {
+    from {transform: translateX(0)}
+    to {transform: translateX(40px)}
+}
+@keyframes moveOutRight {
+    from {transform: translateX(0)}
+    to {transform: translateX(-40px)}
+}
+
+
+@keyframes moveInLeft {
+    from {transform: translateX(-40px)}
+    to {transform: translateX(0)}
+}
+@keyframes moveInRight {
+    from {transform: translateX(40px)}
+    to {transform: translateX(0)}
+}
+
+
+@keyframes charaMoveOut {
+    from {transform: translateX(0)}
+    to {transform: translateX(-20px)}
+}
+@keyframes charaMoveIn {
+    from {transform: translateX(-20px)}
+    to {transform: translateX(0)}
+}
+
+
+@keyframes wlMoveOut {
+    from {transform: translateY(0)}
+    to {transform: translateY(00px)}
+}
+@keyframes wlMoveIn {
+    from {transform: translateY(00px)}
+    to {transform: translateY(0)}
+}
+
+
+@keyframes introWhiteBarTop {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+}
+@keyframes introWhiteBarBot {
+    from {transform: translateX(100%);}
+    to {transform: translateX(0);}
+}
+
+
+@keyframes scoreUpMove {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(100%);}
+}
+
+@keyframes scoreUpGrad {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    100% {opacity: 0;}
+}

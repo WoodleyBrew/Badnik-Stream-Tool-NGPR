@@ -1,5 +1,15 @@
 @font-face {
-    font-family: "Gotham Bold";
+    font-family: "Passenger Sans";
+    src: url('../Fonts/Passenger-Sans.otf');
+}
+
+@font-face {
+    font-family: "Inter Thin"
+    src: url('../Fonts/Inter-Thin.ttf');
+}
+
+@font-face {
+    font-family: "Gotham Bold"
     src: url('../Fonts/Gotham-Bold.ttf');
 }
 
@@ -24,12 +34,21 @@ body {
     padding: 0px;
     margin: 0px;
     text-transform: none;
+	text-shadow: 2px 2px 2px var(--colorR);
     color: white;
-    font-family: "Gotham Bold";
+    font-family: "Passenger Sans";
 }
 
 .absol {
     position: absolute;
+}
+
+#theBackground {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    top: 0px;
+    left: 0px;
 }
 
 .scoreboard {
@@ -48,10 +67,10 @@ body {
 .mask {
     position: absolute;
     -webkit-mask-image: url("../Overlay/Scoreboard/Icon Mask.png");
-    width: 401px;
+    width: 400px;
     height: 104px;
-	left: -125px;
-    top: -84px;
+	left: -97px;
+    top: 368px;
 }
 
 
@@ -67,12 +86,12 @@ body {
 
 /* size and position of the character image itself inside the mask */
 .pCharacter {
-    width: 100px;
-    height: 100px;
+    width: 15px;
+    height: 15px;
     object-fit: scale-down;
     position: absolute;
-    left: 252px;
-    top: 4px;
+    left: 300px;
+    top: -3px;
 }
 
 
@@ -105,14 +124,14 @@ body {
 
 /* Player 1 position */
 #p1Wrapper {
-    left: 32px;
-	top: 29px;
+    left: 25px;
+	top: 329px;
 }
 
 /* Player 2 position */
 #p2Wrapper {
-    right: 30px;
-	top: 29px;
+    right: 25px;
+	top: 329px;
 }
 #p3Wrapper {
     left: 106px;
@@ -158,20 +177,20 @@ body {
     align-items: center;
     width: 54px;
     height: 64px;
-    top: 463px;
-    left: 182px;
+    top: 213px;
+    left: 205px;
     color: white;
-    font-family: "Gotham Bold";
+    font-family: "Passenger Sans";
 }
 
 /* Position of the left and right score respectively */
 #scoreNumL {
     -webkit-text-stroke: 0px var(--colorL);
-    text-shadow: 0px 0px 0px var(--colorL);
+    text-shadow: 2px 2px 2px var(--colorL);
 }
 #scoreNumR {
     -webkit-text-stroke: 0px var(--colorR);
-    text-shadow: 0px 0px 0px var(--colorR);
+    text-shadow: 2px 2px 2px var(--colorR);
 }
 .scoreNumDubs {
     top: 463px;
@@ -184,11 +203,8 @@ body {
 
 /* width and height here are pronoun box size */
 .topBarMask {
-    overflow: hidden;
+    overflow: show;
     display: flex;
-	text-align: center;
-	justify-content: center;
-    align-items: center;
     width: 380px;
     height: 43px;
     transform: translate(-23px, -32px);
@@ -203,36 +219,35 @@ body {
 /* Font size and other flags for pronouns */
 .topBarTexts {
     display: flex;
+	font-family: "Inter Thin";
 	text-align: center;
     border-right: 0px solid;
     border-left: 0px solid;
     gap: 0px;
     margin-top: 50px;
-	font-size: 24px
+	font-size: 30px;
+	font-weight: regular;
 }
 
 /* Flags needed for pronoun text to be centered */
 .topBarProns {
 	display: none;
     color: white;
-	text-align: center;
-	justify-content: center;
-    align-items: center;
 }
 
 /* locations of left and right pronouns respecitvely */
 .topBarProns1 {
     display: none;
     color: white;
-	text-align: center;
-	transform: translate(-84px, -27px);
+	text-align: left;
+	transform: translate(24px, 382px);
 }
 
 .topBarProns2 {
     display: none;
-	text-align: center;
+	text-align: right;
     color: white;
-	transform: translate(88px, -28px);
+	transform: translate(-20px, 382px);
 	
 }
 
@@ -243,7 +258,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    transform: translate(-805px, 323px);
+    transform: translate(-810px, 290px);
 }
 #roundBorder {
     display: flex;
@@ -258,9 +273,9 @@ body {
     opacity: 0;
 }
 #roundText {
-    font-family: "Gotham Bold";
+    font-family: "Inter Thin";
     white-space: nowrap;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 #casterInfo {
@@ -273,16 +288,16 @@ body {
 
 /* Position of the caster object onscreen */
 #casters {
-    bottom: 62.2%;
+    bottom: -1.0%;
     left: 87.7%;
     position: absolute;
-    text-align: left;
-    text-shadow: 2px 2px 5px black;
-    font-family: "Gotham Bold";
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+    font-family: "Inter Thin";
     white-space: nowrap;
     display: flex;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     gap: 0px;
     flex-direction: column;
 }
@@ -291,16 +306,16 @@ body {
     display: flex;
     flex-direction: column;
     width: 185px;
-    margin: 0 -5px;
+    margin: 0 0px;
     flex-shrink: 0;
 }
 
 .casterNameBox {
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     gap: 0px;
-    min-height: 36px;
+    min-height: 0px;
 }
 
 /* Color of caster names */
@@ -343,8 +358,8 @@ body {
 
 /* Size of the mic icon next to the caster names*/
 .micIcon {
-	height: 25px;
-    width: 25px;
+	height: 0px;
+    width: 0px;
 	
 }
 .twitterIcon {

@@ -7,8 +7,8 @@ import { fadeInTimeSc, fadeOutTimeSc } from "../ScGlobals.mjs";
 
 const casterInfoDiv = document.getElementById("casters");
 
-const nameSize = 40;
-const tagSize = 15;
+const nameSize = 90;
+const tagSize = 25;
 const socialSize = 22;
 
 export class Caster {

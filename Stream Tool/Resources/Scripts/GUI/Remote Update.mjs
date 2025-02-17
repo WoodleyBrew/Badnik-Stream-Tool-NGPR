@@ -87,7 +87,7 @@ export async function updateGUI(data) {
 
     // round info
     round.setText(data.round, data.roundIndex, data.roundNumber);
-    round.checkGrands();
+    //round.checkGrands();
     wl.setLeft(data.wl[0]);
     wl.setRight(data.wl[1]);
     tournament.setText(data.tournamentName);

@@ -1,4 +1,9 @@
 @font-face {
+    font-family: "Passenger Sans";
+    src: url('../Fonts/Passenger-Sans.otf');
+}
+
+@font-face {
     font-family: "Gotham Bold";
     src: url('../Fonts/Gotham-Bold.ttf');
 }
@@ -22,7 +27,7 @@ body {
     margin: 0px;
     text-transform: none;
     color: white;
-    font-family: "Gotham Bold";
+    font-family: "Passenger Sans";
 }
 
 .absol {
@@ -62,12 +67,12 @@ body {
 
 /* size and position of the character image itself inside the mask */
 .pCharacter {
-    width: 100px;
-    height: 100px;
+    width: 15px;
+    height: 15px;
     object-fit: scale-down;
     position: absolute;
-    left: 252px;
-    top: 4px;
+    left: 300px;
+    top: -3px;
 }
 
 /* moved offscreen */
@@ -178,7 +183,7 @@ body {
     top: -390px;
     left: 730px;
     color: white;
-    font-family: "Gotham Bold";
+    font-family: "Passenger Sans";
 }
 
 /* Position of the left and right score respectively */
@@ -277,7 +282,7 @@ body {
     opacity: 0;
 }
 #roundText {
-    font-family: "Gotham Bold";
+    font-family: "Passenger Sans";
     white-space: nowrap;
     font-weight: bolder;
 }
@@ -292,17 +297,17 @@ body {
 
 /* Position of the caster object onscreen */
 #casters {
-    bottom: 5.4%;
+    bottom: -70%;
     left: 25.8%;
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 5px black;
-    font-family: "Gotham Bold";
+    font-family: "Passenger Sans";
     white-space: nowrap;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 582px;
+    gap: 660px;
     flex-direction: row;
 }
 
@@ -348,7 +353,7 @@ body {
 	justify-content: center;
     align-items: center;
     text-shadow: 2px 2px 5px black;
-    min-height: 80px;
+    min-height: 800px;
 }
 
 .socialDiv {

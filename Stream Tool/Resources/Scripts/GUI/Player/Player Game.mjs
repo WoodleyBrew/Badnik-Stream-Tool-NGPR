@@ -143,7 +143,7 @@ export class PlayerGame extends Player {
 
         // determine which folder is going to be used
         let folder;
-        folder = "Skins";
+        folder = "Icons";
 
         // get us a valid image
         promises.push(getRecolorImage(
